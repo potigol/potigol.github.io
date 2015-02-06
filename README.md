@@ -1,2 +1,2 @@
-potigol.github.io
+Potigol
 =================
