@@ -1,50 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <title>Linguagem Potigol by potigol</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Linguagem Potigol by potigol</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Linguagem Potigol</h1>
-        <h2>Programação para todos</h2>
-        <a href="https://github.com/potigol" class="button"><small>Follow me on</small> GitHub</a>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Linguagem Potigol</h1>
+        <p class="header">Programação para todos</p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <blockquote>
+
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/potigol">GitHub Profile</a></li>
+        </ul>
+
+      </header>
+      <section>
+        <blockquote>
 <h1>
 <a id="potigol-é-" class="anchor" href="#potigol-%C3%A9-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Potigol é ...</h1>
 
-<p>Uma linguagem moderna para aprender a programar.
-<em><a href="https://dl.dropbox.com/s/0onyn86p432fg4b/potigol090.zip">Download</a></em></p>
+<p>Uma linguagem moderna para aprender a programar.</p>
 </blockquote>
-        </section>
 
-        <aside id="sidebar">
+<hr>
+
+<p><em><a href="https://dl.dropbox.com/s/0onyn86p432fg4b/potigol090.zip">Download</a></em></p>
+
+<h2>
+<a id="a-linguagem" class="anchor" href="#a-linguagem" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Linguagem</h2>
+
+<h3>
+<a id="variáveis" class="anchor" href="#vari%C3%A1veis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variáveis</h3>
+
+<pre><code>x = 10        # Valor fixo
+
+var y = 10    # Valor alterável
+y := y + 2
+</code></pre>
+
+<h3>
+<a id="operação-aritmétricas" class="anchor" href="#opera%C3%A7%C3%A3o-aritm%C3%A9tricas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operação Aritmétricas</h3>
+
+<pre><code>5 + 3
+5 - 3
+5 * 3
+5 / 3
+5 div 3
+5 mod 3
+</code></pre>
+
+<h3>
+<a id="entrada" class="anchor" href="#entrada" aria-hidden="true"><span class="octicon octicon-link"></span></a>Entrada</h3>
+
+<pre><code>a = leia_inteiro
+b = leia_numero
+c = leia_texto
+x, y, z = leia_inteiro
+</code></pre>
+
+<h3>
+<a id="saída" class="anchor" href="#sa%C3%ADda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saída</h3>
+
+<pre><code>escreva "Olá Mundo"   # Escreve e passa para a próxima linha
+imprima "Olá "        # Escreva e continua na mesma linha
+escreva "Mundo"
+
+nome = "Mundo"
+escreva "Olá {nome}"
+</code></pre>
+
+<h3>
+<a id="se" class="anchor" href="#se" aria-hidden="true"><span class="octicon octicon-link"></span></a>Se</h3>
+
+<pre><code>se x &gt; 5 então
+  escreva "Maior do que cinco."
+fim
+</code></pre>
+
+<hr>
+
+<pre><code>se x &gt; 5 então
+   escreva "Maior do que cinco."
+senão
+  escreva "Menor ou igual a cinco."
+fim
+</code></pre>
+
+<hr>
+
+<pre><code>se x &gt; 8 então
+  escreva "Maior do que oito."
+senãose x &gt; 6 então
+  escreva "Maior do que seis."
+senãose x &gt; 4 então
+  escreva "Maior do que quatro."
+senãose x &gt; 2 então
+  escreva "Maior do que dois."
+senão
+  escreva "Menor ou igual a dois."
+fim
+</code></pre>
+
+<h3>
+<a id="escolha" class="anchor" href="#escolha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Escolha</h3>
+
+<pre><code>escolha x
+  caso 1 =&gt; escreva "Um"
+  caso 2 =&gt; escreva "Dois"
+  caso 3 =&gt; escreva "Três"
+  caso _ =&gt; escreva "Outro valor"
+fim
+</code></pre>
+
+<h3>
+<a id="para" class="anchor" href="#para" aria-hidden="true"><span class="octicon octicon-link"></span></a>Para</h3>
+
+<pre><code>para i de 1 até 10 faça
+  escreva i
+fim
+</code></pre>
+
+<h3>
+<a id="enquanto" class="anchor" href="#enquanto" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enquanto</h3>
+
+<pre><code>var i = 0
+enquanto i&lt;=10 faça
+  escreva i
+  i := i + 1
+fim
+</code></pre>
+
+<h3>
+<a id="funções" class="anchor" href="#fun%C3%A7%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções</h3>
+
+<pre><code>soma(x, y: Inteiro) = x + y
+
+a, b = leia_inteiro
+c = soma(a,b)
+escreva "{a} + {b} = {c}"
 
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+fatorial(n: Inteiro)
+  var f = 1
+  para i de 2 até n faça
+    f := f * i
+  fim
+  f
+fim
+
+a = leia_inteiro
+escreva "Fatorial de {a} é {fatorial(a)}"
+</code></pre>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
     </div>
-
-  
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
