@@ -54,7 +54,7 @@
 
 <hr>
 
-<p><em>Versão 0.9.2 <a href="https://www.dropbox.com/s/1f7ffkvgaoyhe33/potigol092.zip?dl=1">Download</a></em></p>
+<p><em><a href="https://www.dropbox.com/s/1f7ffkvgaoyhe33/potigol092.zip?dl=1">Download</a></em></p>
 
 <h2>
 <a id="características" class="anchor" href="#caracter%C3%ADsticas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Características</h2>
@@ -191,6 +191,37 @@ fim
 
 a = leia_inteiro
 escreva "Fatorial de {a} é {fatorial(a)}"
+</code></pre>
+
+<h2>
+<a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
+
+<h3>
+<a id="casamento-de-padrões" class="anchor" href="#casamento-de-padr%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casamento de Padrões</h3>
+
+<pre><code># QuickSort
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] = 
+  escolha num
+    caso []  =&gt; []
+    caso pivo::resto =&gt; 
+      menores = resto.filtre( _ &lt;= pivo )
+      maiores = resto.filtre( _ &gt;  pivo )
+      quicksort(menores) + pivo::quicksort(maiores)
+fim
+
+escreva "Digite alguns números separados por espaços"
+numeros = leia_inteiros(" ")
+escreva "Os números ordenados:"
+escreva quicksort(numeros)
+</code></pre>
+
+<h3>
+<a id="funções-como-valores" class="anchor" href="#fun%C3%A7%C3%B5es-como-valores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções como valores</h3>
+
+<pre><code>numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+pares = numeros.filtre(n =&gt; n mod 2 == 0)
+soma = numeros.injete(0)((a,b) =&gt; a + b)
+dobro = numeros.mapeie(n =&gt; n * 2)
 </code></pre>
       </section>
 
