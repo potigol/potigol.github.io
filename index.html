@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/core.css" media="screen">
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
 
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -54,7 +54,7 @@
 
 <hr>
 
-<p><em><a href="https://github.com/potigol/Potigol/releases">Download</a></em></p>
+<p><em><a href="https://www.dropbox.com/s/1f7ffkvgaoyhe33/potigol092.zip?dl=1">Download</a></em></p>
 
 <h2>
 <a id="características" class="anchor" href="#caracter%C3%ADsticas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Características</h2>
@@ -68,12 +68,34 @@
 </ul>
 
 <h2>
+<a id="como-usar" class="anchor" href="#como-usar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Como usar:</h2>
+
+<ul>
+<li>Baixe a versão mais recente do Potigol <a href="https://github.com/potigol/Potigol/releases">https://github.com/potigol/Potigol/releases</a>
+</li>
+<li>Descompacte o arquivo</li>
+<li>
+<p>Para executar o Editor de Código digite no prompt do terminal</p>
+
+<p><code>java -jar epotigol.jar</code></p>
+</li>
+<li>
+<p>Para executar um programa em Potigol digite no prompt do terminal</p>
+
+<p><code>java -jar potigol.jar arquivo.poti</code></p>
+</li>
+<li><p>No Windows basta usar <code>epotigol</code> ou <code>potigol arquivo.poti</code>.</p></li>
+</ul>
+
+<p>Exemplos: <a href="https://github.com/potigol/Potigol/wiki/jogos">https://github.com/potigol/Potigol/wiki/jogos</a></p>
+
+<h2>
 <a id="a-linguagem" class="anchor" href="#a-linguagem" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Linguagem</h2>
 
 <h3>
 <a id="variáveis" class="anchor" href="#vari%C3%A1veis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variáveis</h3>
 
-<div class="highlight highlight-ruby"><pre>x <span class="pl-k">=</span> <span class="pl-c1">10</span>        <span class="pl-c"># Valor fixo</span>
+<div class="highlight highlight-python"><pre>x <span class="pl-k">=</span> <span class="pl-c1">10</span>        <span class="pl-c"># Valor fixo</span>
 
 var y <span class="pl-k">=</span> <span class="pl-c1">10</span>    <span class="pl-c"># Valor alterável</span>
 y :<span class="pl-k">=</span> y <span class="pl-k">+</span> <span class="pl-c1">2</span></pre></div>
@@ -81,116 +103,102 @@ y :<span class="pl-k">=</span> y <span class="pl-k">+</span> <span class="pl-c1"
 <h3>
 <a id="operação-aritméticas" class="anchor" href="#opera%C3%A7%C3%A3o-aritm%C3%A9ticas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operação Aritméticas</h3>
 
-<pre><code>5 + 3
-5 - 3
-5 * 3
-5 / 3
-5 div 3
-5 mod 3
-</code></pre>
+<div class="highlight highlight-python"><pre><span class="pl-c1">5</span> <span class="pl-k">+</span> <span class="pl-c1">3</span>
+<span class="pl-c1">5</span> <span class="pl-k">-</span> <span class="pl-c1">3</span>
+<span class="pl-c1">5</span> <span class="pl-k">*</span> <span class="pl-c1">3</span>
+<span class="pl-c1">5</span> <span class="pl-k">/</span> <span class="pl-c1">3</span>
+<span class="pl-c1">5</span> div <span class="pl-c1">3</span>
+<span class="pl-c1">5</span> mod <span class="pl-c1">3</span>
 
-<h3>
-<a id="entrada" class="anchor" href="#entrada" aria-hidden="true"><span class="octicon octicon-link"></span></a>Entrada</h3>
-
-<pre><code>a = leia_inteiro
-b = leia_numero
-c = leia_texto
-x, y, z = leia_inteiro
-</code></pre>
+<span class="pl-c">### Entrada</span>
+````python
+a <span class="pl-k">=</span> leia_inteiro
+b <span class="pl-k">=</span> leia_numero
+c <span class="pl-k">=</span> leia_texto
+x, y, z <span class="pl-k">=</span> leia_inteiro</pre></div>
 
 <h3>
 <a id="saída" class="anchor" href="#sa%C3%ADda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saída</h3>
 
-<pre><code>escreva "Olá Mundo"   # Escreve e passa para a próxima linha
-imprima "Olá "        # Escreve e continua na mesma linha
-escreva "Mundo"
+<div class="highlight highlight-python"><pre>escreva <span class="pl-s"><span class="pl-pds">"</span>Olá Mundo<span class="pl-pds">"</span></span>   <span class="pl-c"># Escreve e passa para a próxima linha</span>
+imprima <span class="pl-s"><span class="pl-pds">"</span>Olá <span class="pl-pds">"</span></span>        <span class="pl-c"># Escreve e continua na mesma linha</span>
+escreva <span class="pl-s"><span class="pl-pds">"</span>Mundo<span class="pl-pds">"</span></span>
 
-nome = "Mundo"
-escreva "Olá {nome}"
-</code></pre>
+nome <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Mundo<span class="pl-pds">"</span></span>
+escreva <span class="pl-s"><span class="pl-pds">"</span>Olá <span class="pl-c1">{nome}</span><span class="pl-pds">"</span></span></pre></div>
 
 <h3>
 <a id="se" class="anchor" href="#se" aria-hidden="true"><span class="octicon octicon-link"></span></a>Se</h3>
 
-<pre><code>se x &gt; 5 então
-  escreva "Maior do que cinco."
+<div class="highlight highlight-python"><pre>se x <span class="pl-k">&gt;</span> <span class="pl-c1">5</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que cinco.<span class="pl-pds">"</span></span>
 fim
-</code></pre>
 
-<hr>
-
-<pre><code>se x &gt; 5 então
-   escreva "Maior do que cinco."
+<span class="pl-k">---</span>
+se x <span class="pl-k">&gt;</span> <span class="pl-c1">5</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que cinco.<span class="pl-pds">"</span></span>
 senão
-  escreva "Menor ou igual a cinco."
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Menor ou igual a cinco.<span class="pl-pds">"</span></span>
 fim
-</code></pre>
 
-<hr>
-
-<pre><code>se x &gt; 8 então
-  escreva "Maior do que oito."
-senãose x &gt; 6 então
-  escreva "Maior do que seis."
-senãose x &gt; 4 então
-  escreva "Maior do que quatro."
-senãose x &gt; 2 então
-  escreva "Maior do que dois."
+<span class="pl-k">---</span>
+se x <span class="pl-k">&gt;</span> <span class="pl-c1">8</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que oito.<span class="pl-pds">"</span></span>
+senãose x <span class="pl-k">&gt;</span> <span class="pl-c1">6</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que seis.<span class="pl-pds">"</span></span>
+senãose x <span class="pl-k">&gt;</span> <span class="pl-c1">4</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que quatro.<span class="pl-pds">"</span></span>
+senãose x <span class="pl-k">&gt;</span> <span class="pl-c1">2</span> então
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Maior do que dois.<span class="pl-pds">"</span></span>
 senão
-  escreva "Menor ou igual a dois."
-fim
-</code></pre>
+    escreva <span class="pl-s"><span class="pl-pds">"</span>Menor ou igual a dois.<span class="pl-pds">"</span></span>
+fim</pre></div>
 
 <h3>
 <a id="escolha" class="anchor" href="#escolha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Escolha</h3>
 
-<pre><code>escolha x
-  caso 1 =&gt; escreva "Um"
-  caso 2 =&gt; escreva "Dois"
-  caso 3 =&gt; escreva "Três"
-  caso _ =&gt; escreva "Outro valor"
-fim
-</code></pre>
+<div class="highlight highlight-python"><pre>escolha x
+    caso <span class="pl-c1">1</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> escreva <span class="pl-s"><span class="pl-pds">"</span>Um<span class="pl-pds">"</span></span>
+    caso <span class="pl-c1">2</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> escreva <span class="pl-s"><span class="pl-pds">"</span>Dois<span class="pl-pds">"</span></span>
+    caso <span class="pl-c1">3</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> escreva <span class="pl-s"><span class="pl-pds">"</span>Três<span class="pl-pds">"</span></span>
+    caso _ <span class="pl-k">=</span><span class="pl-k">&gt;</span> escreva <span class="pl-s"><span class="pl-pds">"</span>Outro valor<span class="pl-pds">"</span></span>
+fim</pre></div>
 
 <h3>
 <a id="para" class="anchor" href="#para" aria-hidden="true"><span class="octicon octicon-link"></span></a>Para</h3>
 
-<pre><code>para i de 1 até 10 faça
-  escreva i
-fim
-</code></pre>
+<div class="highlight highlight-python"><pre>para i de <span class="pl-c1">1</span> até <span class="pl-c1">10</span> faça
+    escreva i
+fim</pre></div>
 
 <h3>
 <a id="enquanto" class="anchor" href="#enquanto" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enquanto</h3>
 
-<pre><code>var i = 0
-enquanto i&lt;=10 faça
-  escreva i
-  i := i + 1
-fim
-</code></pre>
+<div class="highlight highlight-python"><pre>var i <span class="pl-k">=</span> <span class="pl-c1">0</span>
+enquanto i<span class="pl-k">&lt;=</span><span class="pl-c1">10</span> faça
+    escreva i
+    i :<span class="pl-k">=</span> i <span class="pl-k">+</span> <span class="pl-c1">1</span>
+fim</pre></div>
 
 <h3>
 <a id="funções" class="anchor" href="#fun%C3%A7%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções</h3>
 
-<pre><code>soma(x, y: Inteiro) = x + y
+<div class="highlight highlight-python"><pre>soma(x, y: Inteiro) <span class="pl-k">=</span> x <span class="pl-k">+</span> y
 
-a, b = leia_inteiro
-c = soma(a,b)
-escreva "{a} + {b} = {c}"
-
+a, b <span class="pl-k">=</span> leia_inteiro
+c <span class="pl-k">=</span> soma(a, b)
+escreva <span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">{a}</span> + <span class="pl-c1">{b}</span> = <span class="pl-c1">{c}</span><span class="pl-pds">"</span></span>
 
 fatorial(n: Inteiro)
-  var f = 1
-  para i de 2 até n faça
-    f := f * i
-  fim
-  f
+    var f <span class="pl-k">=</span> <span class="pl-c1">1</span>
+    para i de <span class="pl-c1">2</span> até n faça
+        f :<span class="pl-k">=</span> f <span class="pl-k">*</span> i
+    fim
+    f
 fim
 
-a = leia_inteiro
-escreva "Fatorial de {a} é {fatorial(a)}"
-</code></pre>
+a <span class="pl-k">=</span> leia_inteiro
+escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class="pl-c1">{a}</span> é {fatorial(a)}<span class="pl-pds">"</span></span></pre></div>
 
 <h2>
 <a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
@@ -198,30 +206,28 @@ escreva "Fatorial de {a} é {fatorial(a)}"
 <h3>
 <a id="casamento-de-padrões" class="anchor" href="#casamento-de-padr%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casamento de Padrões</h3>
 
-<pre><code># QuickSort
-quicksort(num: Lista[Inteiro]): Lista[Inteiro] = 
-  escolha num
-    caso []  =&gt; []
-    caso pivo::resto =&gt; 
-      menores = resto.filtre( _ &lt;= pivo )
-      maiores = resto.filtre( _ &gt;  pivo )
-      quicksort(menores) + pivo::quicksort(maiores)
-fim
+<div class="highlight highlight-python"><pre><span class="pl-c"># QuickSort</span>
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] <span class="pl-k">=</span> 
+    escolha num
+        caso []  <span class="pl-k">=</span><span class="pl-k">&gt;</span> []
+        caso pivo::resto <span class="pl-k">=</span><span class="pl-k">&gt;</span> 
+            menores <span class="pl-k">=</span> resto.filtre( _ <span class="pl-k">&lt;=</span> pivo )
+            maiores <span class="pl-k">=</span> resto.filtre( _ <span class="pl-k">&gt;</span>  pivo )
+            quicksort(menores) <span class="pl-k">+</span> pivo::quicksort(maiores)
+    fim
 
-escreva "Digite alguns números separados por espaços"
-numeros = leia_inteiros(" ")
-escreva "Os números ordenados:"
-escreva quicksort(numeros)
-</code></pre>
+escreva <span class="pl-s"><span class="pl-pds">"</span>Digite alguns números separados por espaços<span class="pl-pds">"</span></span>
+numeros <span class="pl-k">=</span> leia_inteiros(<span class="pl-s"><span class="pl-pds">"</span> <span class="pl-pds">"</span></span>)
+escreva <span class="pl-s"><span class="pl-pds">"</span>Os números ordenados:<span class="pl-pds">"</span></span>
+escreva quicksort(numeros)</pre></div>
 
 <h3>
 <a id="funções-como-valores" class="anchor" href="#fun%C3%A7%C3%B5es-como-valores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções como valores</h3>
 
-<pre><code>numeros = [1, 2, 3, 4, 5, 6, 7, 8]
-pares = numeros.filtre(n =&gt; n mod 2 == 0)
-soma = numeros.injete(0)((a,b) =&gt; a + b)
-dobro = numeros.mapeie(n =&gt; n * 2)
-</code></pre>
+<div class="highlight highlight-python"><pre>numeros <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>, <span class="pl-c1">6</span>, <span class="pl-c1">7</span>, <span class="pl-c1">8</span>]
+pares <span class="pl-k">=</span> numeros.filtre(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n mod <span class="pl-c1">2</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>)
+soma <span class="pl-k">=</span> numeros.injete(<span class="pl-c1">0</span>)((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)
+dobro <span class="pl-k">=</span> numeros.mapeie(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">*</span> <span class="pl-c1">2</span>)</pre></div>
       </section>
 
       <footer>
@@ -232,7 +238,7 @@ dobro = numeros.mapeie(n =&gt; n * 2)
           <span class="left-tail"></span>
           <span class="right-tail"></span>
         </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
         <span class="octocat"></span>
       </footer>
 
