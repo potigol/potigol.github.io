@@ -263,9 +263,8 @@ c <span class="pl-k">=</span> Cubo.imutável(<span class="pl-c1">2</span>, <span
 c[<span class="pl-c1">1</span>][<span class="pl-c1">2</span>][<span class="pl-c1">1</span>]                               <span class="pl-c"># "-"</span>
 
 <span class="pl-c"># Listas mutáveis</span>
-Lista.mutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                      <span class="pl-c"># [0, 0, 0, 0, 0].mutável</span>
-a <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]
-a[<span class="pl-c1">3</span>] :<span class="pl-k">=</span> <span class="pl-c1">5</span>                                <span class="pl-c"># a == [2, 4, 5, 8, 10].mutável</span>
+a <span class="pl-k">=</span> Lista.mutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                      <span class="pl-c"># [0, 0, 0, 0, 0].mutável</span>
+a[<span class="pl-c1">3</span>] :<span class="pl-k">=</span> <span class="pl-c1">5</span>                                    <span class="pl-c"># a == [0, 0, 5, 0, 0].mutável</span>
 
 <span class="pl-c"># Funções de alta-ordem</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].selecione(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n mod <span class="pl-c1">4</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>)  <span class="pl-c"># [4, 8]</span>
@@ -294,15 +293,15 @@ arcsen(<span class="pl-c1">1</span>)
 arccos(<span class="pl-c1">1</span>)
 arctg(<span class="pl-c1">1</span>)
 
-<span class="pl-c1">abs</span>(<span class="pl-k">-</span><span class="pl-c1">2.4</span>)                                      <span class="pl-c"># 2.4</span>
-raiz(<span class="pl-c1">9</span>)                                        <span class="pl-c"># 3.0</span>
+<span class="pl-c1">abs</span>(<span class="pl-k">-</span><span class="pl-c1">2.4</span>)                              <span class="pl-c"># 2.4</span>
+raiz(<span class="pl-c1">9</span>)                                <span class="pl-c"># 3.0</span>
 log(<span class="pl-c1">2</span>)
 log10(<span class="pl-c1">2</span>)
 
-aleatório()                                    <span class="pl-c"># número aleatório entre 0 e 1</span>
-aleatório(<span class="pl-c1">10</span>)                                  <span class="pl-c"># número aleatório entre 1 e 10</span>
-aleatório(<span class="pl-c1">1</span>, <span class="pl-c1">6</span>)                                <span class="pl-c"># número aleatório entre 1 e 6</span>
-aleatório([<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>])                    <span class="pl-c"># número aleatório pertencente à lista [2, 4, 6, 8, 10]</span></pre></div>
+aleatório()                            <span class="pl-c"># número aleatório entre 0 e 1</span>
+aleatório(<span class="pl-c1">10</span>)                          <span class="pl-c"># número aleatório entre 1 e 10</span>
+aleatório(<span class="pl-c1">1</span>, <span class="pl-c1">6</span>)                        <span class="pl-c"># número aleatório entre 1 e 6</span>
+aleatório([<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>])            <span class="pl-c"># número aleatório pertencente à lista [2, 4, 6, 8, 10]</span></pre></div>
 
 <h2>
 <a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
