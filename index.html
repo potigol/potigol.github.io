@@ -229,7 +229,7 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 <span class="pl-c1">2</span> :: [<span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]                       <span class="pl-c"># [2, 4, 6, 8, 10]</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].tamanho                 <span class="pl-c"># 5</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cabeça                  <span class="pl-c"># 2</span>
-[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cauda                   <span class="pl-c"># [4, 6, 7, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cauda                   <span class="pl-c"># [4, 6, 8, 10]</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].último                  <span class="pl-c"># 10</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].pegue(<span class="pl-c1">2</span>)                <span class="pl-c"># [2, 4]</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].passe(<span class="pl-c1">2</span>)                <span class="pl-c"># [6, 8, 10]</span>
@@ -254,6 +254,14 @@ a.insira(<span class="pl-c1">3</span>,<span class="pl-c1">5</span>)             
 Lista.imutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                     <span class="pl-c"># [0, 0, 0, 0, 0]</span>
 Lista.vazia[Inteiro]                     <span class="pl-c"># []   - Lista vazia de inteiros</span>
 
+<span class="pl-c"># Matrizes e Cubos</span>
+a <span class="pl-k">=</span> [[<span class="pl-c1">1</span>, <span class="pl-c1">2</span>], [<span class="pl-c1">3</span>, <span class="pl-c1">4</span>]]                     <span class="pl-c"># Matriz 2x2</span>
+a[<span class="pl-c1">2</span>]                                     <span class="pl-c"># [3, 4]</span>
+a[<span class="pl-c1">2</span>][<span class="pl-c1">1</span>]                                  <span class="pl-c"># 3</span>
+b <span class="pl-k">=</span> Matriz.imutável(<span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">0</span>)             <span class="pl-c"># b == [[0, 0], [0, 0]]</span>
+c <span class="pl-k">=</span> Cubo.imutável(<span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-s"><span class="pl-pds">"</span>-<span class="pl-pds">"</span></span>)          <span class="pl-c"># c == [[["-", "-"],["-", "-"]],[["-", "-"],["-", "-"]]] </span>
+c[<span class="pl-c1">1</span>][<span class="pl-c1">2</span>][<span class="pl-c1">1</span>]                               <span class="pl-c"># "-"</span>
+
 <span class="pl-c"># Listas mutáveis</span>
 Lista.mutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                      <span class="pl-c"># [0, 0, 0, 0, 0].mutável</span>
 a <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]
@@ -265,13 +273,36 @@ a[<span class="pl-c1">3</span>] :<span class="pl-k">=</span> <span class="pl-c1"
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete(<span class="pl-c1">0</span>)((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)           <span class="pl-c"># 0 + 2 + 4 + 6 == 12</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)              <span class="pl-c"># 2 + 4 + 6 == 12</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].pegue_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [2, 4]</span>
-[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].passe_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [6, 2, 4]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].passe_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [6, 2, 4]</span></pre></div>
 
+<h3>
+<a id="tupla" class="anchor" href="#tupla" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tupla</h3>
 
+<div class="highlight highlight-python"><pre>t <span class="pl-k">=</span> (<span class="pl-c1">2015</span>, <span class="pl-s"><span class="pl-pds">"</span>potigol<span class="pl-pds">"</span></span>, <span class="pl-c1">1.0</span>)                     <span class="pl-c"># Tupla do tipo (Inteiro, Texto, Real</span>
+t.primeiro                                     <span class="pl-c"># 2015</span>
+t.segundo                                      <span class="pl-c"># "potigol"</span>
+t.terceiro                                     <span class="pl-c"># 1.0</span></pre></div>
 
+<h2>
+<a id="funções-matemática" class="anchor" href="#fun%C3%A7%C3%B5es-matem%C3%A1tica" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções Matemática</h2>
 
+<div class="highlight highlight-python"><pre>PI
+sen(<span class="pl-c1">3.14</span>)
+cos(<span class="pl-c1">3.14</span>)
+tg(<span class="pl-c1">1</span>)
+arcsen(<span class="pl-c1">1</span>)
+arccos(<span class="pl-c1">1</span>)
+arctg(<span class="pl-c1">1</span>)
 
-</pre></div>
+<span class="pl-c1">abs</span>(<span class="pl-k">-</span><span class="pl-c1">2.4</span>)                                      <span class="pl-c"># 2.4</span>
+raiz(<span class="pl-c1">9</span>)                                        <span class="pl-c"># 3.0</span>
+log(<span class="pl-c1">2</span>)
+log10(<span class="pl-c1">2</span>)
+
+aleatório()                                    <span class="pl-c"># número aleatório entre 0 e 1</span>
+aleatório(<span class="pl-c1">10</span>)                                  <span class="pl-c"># número aleatório entre 1 e 10</span>
+aleatório(<span class="pl-c1">1</span>, <span class="pl-c1">6</span>)                                <span class="pl-c"># número aleatório entre 1 e 6</span>
+aleatório([<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>])                    <span class="pl-c"># número aleatório pertencente à lista [2, 4, 6, 8, 10]</span></pre></div>
 
 <h2>
 <a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
