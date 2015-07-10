@@ -198,6 +198,7 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 <span class="pl-s"><span class="pl-pds">"</span>12a.3<span class="pl-pds">"</span></span>.real                      <span class="pl-c"># 12.0</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.real                        <span class="pl-c"># 0.0</span>
 
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.tamanho                     <span class="pl-c"># 3</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>)                <span class="pl-c"># 2</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>d<span class="pl-pds">'</span></span>)                <span class="pl-c"># 0</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.contém(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>)                 <span class="pl-c"># verdadeiro</span>
@@ -214,10 +215,63 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.cabeça                      <span class="pl-c"># 'a'</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.cauda                       <span class="pl-c"># "bc"</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.último                      <span class="pl-c"># 'c'</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcde<span class="pl-pds">"</span></span>.pegue(<span class="pl-c1">3</span>)                  <span class="pl-c"># "abc"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcde<span class="pl-pds">"</span></span>.passe(<span class="pl-c1">3</span>)                  <span class="pl-c"># "de"</span>
 
 <span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.selecione(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)       <span class="pl-c"># "abb"</span>
-<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.passe_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)  <span class="pl-c"># "ab"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.passe_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)  <span class="pl-c"># "cb"</span>
 <span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.pegue_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-k">&lt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)   <span class="pl-c"># "ab"</span></pre></div>
+
+<h3>
+<a id="lista" class="anchor" href="#lista" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lista</h3>
+
+<div class="highlight highlight-python"><pre>[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]                         <span class="pl-c"># lista literal</span>
+<span class="pl-c1">2</span> :: [<span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]                       <span class="pl-c"># [2, 4, 6, 8, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].tamanho                 <span class="pl-c"># 5</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cabeça                  <span class="pl-c"># 2</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cauda                   <span class="pl-c"># [4, 6, 7, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].último                  <span class="pl-c"># 10</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].pegue(<span class="pl-c1">2</span>)                <span class="pl-c"># [2, 4]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].passe(<span class="pl-c1">2</span>)                <span class="pl-c"># [6, 8, 10]</span>
+
+
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].inverta                 <span class="pl-c"># [10, 8, 6, 4, 2]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>, <span class="pl-c1">4</span>].ordene                  <span class="pl-c"># [2, 4, 6, 8, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>] <span class="pl-k">+</span> [<span class="pl-c1">8</span>, <span class="pl-c1">10</span>]                      <span class="pl-c"># [2, 4, 6, 8, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>].junte                          <span class="pl-c"># "246"</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>].junte(<span class="pl-s"><span class="pl-pds">"</span>, <span class="pl-pds">"</span></span>)                    <span class="pl-c"># "2, 4, 6"</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>].junte(<span class="pl-s"><span class="pl-pds">"</span>[<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>, <span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>]<span class="pl-pds">"</span></span>)          <span class="pl-c"># "[2, 4, 6]"</span>
+
+a <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]
+a[<span class="pl-c1">3</span>]                                     <span class="pl-c"># 6</span>
+a.posição(<span class="pl-c1">6</span>)                             <span class="pl-c"># 3</span>
+a.posição(<span class="pl-c1">12</span>)                            <span class="pl-c"># 0</span>
+a.contém(<span class="pl-c1">6</span>)                              <span class="pl-c"># verdadeiro</span>
+a.contém(<span class="pl-c1">12</span>)                             <span class="pl-c"># falso</span>
+a.remova(<span class="pl-c1">4</span>)                              <span class="pl-c"># [2, 4, 6, 10]</span>
+a.insira(<span class="pl-c1">3</span>,<span class="pl-c1">5</span>)                            <span class="pl-c"># [2, 4, 5, 6, 8, 10]</span>
+
+Lista.imutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                     <span class="pl-c"># [0, 0, 0, 0, 0]</span>
+Lista.vazia[Inteiro]                     <span class="pl-c"># []   - Lista vazia de inteiros</span>
+
+<span class="pl-c"># Listas mutáveis</span>
+Lista.mutável(<span class="pl-c1">5</span>, <span class="pl-c1">0</span>)                      <span class="pl-c"># [0, 0, 0, 0, 0].mutável</span>
+a <span class="pl-k">=</span> [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>]
+a[<span class="pl-c1">3</span>] :<span class="pl-k">=</span> <span class="pl-c1">5</span>                                <span class="pl-c"># a == [2, 4, 5, 8, 10].mutável</span>
+
+<span class="pl-c"># Funções de alta-ordem</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].selecione(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n mod <span class="pl-c1">4</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>)  <span class="pl-c"># [4, 8]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].mapeie(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n div <span class="pl-c1">2</span>)          <span class="pl-c"># [1, 2, 3, 4, 5]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete(<span class="pl-c1">0</span>)((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)           <span class="pl-c"># 0 + 2 + 4 + 6 == 12</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)              <span class="pl-c"># 2 + 4 + 6 == 12</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].pegue_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [2, 4]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].passe_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [6, 2, 4]</span>
+
+
+
+
+
+</pre></div>
 
 <h2>
 <a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
