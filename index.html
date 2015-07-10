@@ -181,11 +181,31 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 <div class="highlight highlight-python"><pre><span class="pl-s"><span class="pl-pds">"</span>123<span class="pl-pds">"</span></span>.inteiro                     <span class="pl-c"># 123</span>
 <span class="pl-s"><span class="pl-pds">"</span>12abc3<span class="pl-pds">"</span></span>.inteiro                  <span class="pl-c"># 12</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.inteiro                     <span class="pl-c"># 0</span>
-<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>)                <span class="pl-c"># 2</span>
-<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>d<span class="pl-pds">'</span></span>)                <span class="pl-c"># 0</span>
+
 <span class="pl-s"><span class="pl-pds">"</span>12.3<span class="pl-pds">"</span></span>.real                       <span class="pl-c"># 12.3</span>
 <span class="pl-s"><span class="pl-pds">"</span>12a.3<span class="pl-pds">"</span></span>.real                      <span class="pl-c"># 12.0</span>
-<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.real                        <span class="pl-c"># 0.0</span></pre></div>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.real                        <span class="pl-c"># 0.0</span>
+
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>)                <span class="pl-c"># 2</span>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.posição(<span class="pl-s"><span class="pl-pds">'</span>d<span class="pl-pds">'</span></span>)                <span class="pl-c"># 0</span>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.contém(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>)                 <span class="pl-c"># verdadeiro</span>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.contém(<span class="pl-s"><span class="pl-pds">'</span>d<span class="pl-pds">'</span></span>)                 <span class="pl-c"># falso</span>
+
+<span class="pl-s"><span class="pl-pds">"</span>Abc<span class="pl-pds">"</span></span>.maiúsculo                   <span class="pl-c"># "ABC"</span>
+<span class="pl-s"><span class="pl-pds">"</span>Abc<span class="pl-pds">"</span></span>.minúsculo                   <span class="pl-c"># "abc"</span>
+<span class="pl-s"><span class="pl-pds">"</span>Abc<span class="pl-pds">"</span></span>.inverta                     <span class="pl-c"># "cbA"</span>
+
+<span class="pl-s"><span class="pl-pds">"</span>Isto é um texto<span class="pl-pds">"</span></span>.divida          <span class="pl-c"># ["Isto", "é", "um", "texto"]</span>
+<span class="pl-s"><span class="pl-pds">"</span>Isto é um texto<span class="pl-pds">"</span></span>.divida(<span class="pl-s"><span class="pl-pds">"</span>t<span class="pl-pds">"</span></span>)     <span class="pl-c"># ["Is", "o é um ", "ex", "o"]</span>
+<span class="pl-s"><span class="pl-pds">"</span>Isto é um texto<span class="pl-pds">"</span></span>.lista           <span class="pl-c"># ["I", "s", "t", "o", " ", "é", " ", "u", "m", " ", "t", "e", "x", "t", "o"]</span>
+
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.cabeça                      <span class="pl-c"># 'a'</span>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.cauda                       <span class="pl-c"># "bc"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.último                      <span class="pl-c"># 'c'</span>
+
+<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.selecione(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)       <span class="pl-c"># "abb"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.passe_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)  <span class="pl-c"># "ab"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.pegue_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-k">&lt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)   <span class="pl-c"># "ab"</span></pre></div>
 
 <h2>
 <a id="programação-funcional" class="anchor" href="#programa%C3%A7%C3%A3o-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programação Funcional</h2>
