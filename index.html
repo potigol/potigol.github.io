@@ -87,7 +87,9 @@ y :<span class="pl-k">=</span> y <span class="pl-k">+</span> <span class="pl-c1"
 <div class="highlight highlight-python"><pre>a <span class="pl-k">=</span> leia_inteiro
 b <span class="pl-k">=</span> leia_numero
 c <span class="pl-k">=</span> leia_texto
-x, y, z <span class="pl-k">=</span> leia_inteiro</pre></div>
+x, y, z <span class="pl-k">=</span> leia_inteiro
+números <span class="pl-k">=</span> leia_inteiros(<span class="pl-c1">5</span>)      <span class="pl-c"># lê um lista de 5 inteiros , um por linha</span>
+números <span class="pl-k">=</span> leia_inteiros(<span class="pl-s"><span class="pl-pds">"</span>,<span class="pl-pds">"</span></span>)    <span class="pl-c"># lê uma lista de números separados por vírgula</span></pre></div>
 
 <h3>
 <a id="saída" class="anchor" href="#sa%C3%ADda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saída</h3>
@@ -174,6 +176,16 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 
 <h2>
 <a id="tipos" class="anchor" href="#tipos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tipos</h2>
+
+<h3>
+<a id="número-inteiro-e-real" class="anchor" href="#n%C3%BAmero-inteiro-e-real" aria-hidden="true"><span class="octicon octicon-link"></span></a>Número (Inteiro e Real)</h3>
+
+<div class="highlight highlight-python"><pre><span class="pl-c1">12345.678</span>.inteiro                 <span class="pl-c"># 12345</span>
+<span class="pl-c1">12345.678</span>.arredonde               <span class="pl-c"># 12346</span>
+<span class="pl-c1">12345.678</span>.arredonde(<span class="pl-c1">2</span>)            <span class="pl-c"># 12345.68</span>
+<span class="pl-c1">12345</span>.texto                       <span class="pl-c"># "12345"</span>
+<span class="pl-c1">12345</span> formato <span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">%8d</span><span class="pl-pds">"</span></span>               <span class="pl-c"># "   12345"</span>
+<span class="pl-c1">123.45</span> formato <span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">%.1f</span><span class="pl-pds">"</span></span>             <span class="pl-c"># "123.4"</span></pre></div>
 
 <h3>
 <a id="texto" class="anchor" href="#texto" aria-hidden="true"><span class="octicon octicon-link"></span></a>Texto</h3>
