@@ -5,7 +5,7 @@
     <title>Linguagem Potigol by potigol</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -74,7 +74,7 @@ var y <span class="pl-k">=</span> <span class="pl-c1">10</span>    <span class="
 y :<span class="pl-k">=</span> y <span class="pl-k">+</span> <span class="pl-c1">2</span></pre></div>
 
 <h3>
-<a id="operação-aritméticas" class="anchor" href="#opera%C3%A7%C3%A3o-aritm%C3%A9ticas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operação Aritméticas</h3>
+<a id="operações-aritméticas" class="anchor" href="#opera%C3%A7%C3%B5es-aritm%C3%A9ticas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operações Aritméticas</h3>
 
 <div class="highlight highlight-python"><pre><span class="pl-c1">5</span> <span class="pl-k">+</span> <span class="pl-c1">3</span>
 <span class="pl-c1">5</span> <span class="pl-k">-</span> <span class="pl-c1">3</span>
@@ -218,10 +218,10 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.cauda                       <span class="pl-c"># "bc"</span>
 <span class="pl-s"><span class="pl-pds">"</span>abc<span class="pl-pds">"</span></span>.último                      <span class="pl-c"># 'c'</span>
 <span class="pl-s"><span class="pl-pds">"</span>abcde<span class="pl-pds">"</span></span>.pegue(<span class="pl-c1">3</span>)                  <span class="pl-c"># "abc"</span>
-<span class="pl-s"><span class="pl-pds">"</span>abcde<span class="pl-pds">"</span></span>.passe(<span class="pl-c1">3</span>)                  <span class="pl-c"># "de"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcde<span class="pl-pds">"</span></span>.descarte(<span class="pl-c1">3</span>)                  <span class="pl-c"># "de"</span>
 
 <span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.selecione(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)       <span class="pl-c"># "abb"</span>
-<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.passe_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)  <span class="pl-c"># "cb"</span>
+<span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.descarte_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-id">&lt;&gt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)  <span class="pl-c"># "cb"</span>
 <span class="pl-s"><span class="pl-pds">"</span>abcb<span class="pl-pds">"</span></span>.pegue_enquanto(<span class="pl-smi">letra</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> letra<span class="pl-k">&lt;</span><span class="pl-s"><span class="pl-pds">'</span>c<span class="pl-pds">'</span></span>)   <span class="pl-c"># "ab"</span></pre></div>
 
 <h3>
@@ -234,7 +234,7 @@ escreva <span class="pl-s"><span class="pl-pds">"</span>Fatorial de <span class=
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].cauda                   <span class="pl-c"># [4, 6, 8, 10]</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].último                  <span class="pl-c"># 10</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].pegue(<span class="pl-c1">2</span>)                <span class="pl-c"># [2, 4]</span>
-[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].passe(<span class="pl-c1">2</span>)                <span class="pl-c"># [6, 8, 10]</span>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].descarte(<span class="pl-c1">2</span>)                <span class="pl-c"># [6, 8, 10]</span>
 
 
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">8</span>, <span class="pl-c1">10</span>].inverta                 <span class="pl-c"># [10, 8, 6, 4, 2]</span>
@@ -274,7 +274,7 @@ a[<span class="pl-c1">3</span>] :<span class="pl-k">=</span> <span class="pl-c1"
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete(<span class="pl-c1">0</span>)((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)           <span class="pl-c"># 0 + 2 + 4 + 6 == 12</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>]. injete((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)              <span class="pl-c"># 2 + 4 + 6 == 12</span>
 [<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].pegue_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [2, 4]</span>
-[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].passe_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [6, 2, 4]</span></pre></div>
+[<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">6</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>].descarte_enquanto(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">&lt;</span> <span class="pl-c1">6</span>)     <span class="pl-c"># [6, 2, 4]</span></pre></div>
 
 <h3>
 <a id="tupla" class="anchor" href="#tupla" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tupla</h3>
@@ -316,8 +316,8 @@ quicksort(num: Lista[Inteiro]): Lista[Inteiro] <span class="pl-k">=</span>
     escolha num
         caso []  <span class="pl-k">=</span><span class="pl-k">&gt;</span> []
         caso pivo::resto <span class="pl-k">=</span><span class="pl-k">&gt;</span> 
-            menores <span class="pl-k">=</span> resto.filtre( _ <span class="pl-k">&lt;=</span> pivo )
-            maiores <span class="pl-k">=</span> resto.filtre( _ <span class="pl-k">&gt;</span>  pivo )
+            menores <span class="pl-k">=</span> resto.selecione( _ <span class="pl-k">&lt;=</span> pivo )
+            maiores <span class="pl-k">=</span> resto.selecione( _ <span class="pl-k">&gt;</span>  pivo )
             quicksort(menores) <span class="pl-k">+</span> pivo::quicksort(maiores)
     fim
 
@@ -330,7 +330,7 @@ escreva quicksort(numeros)</pre></div>
 <a id="funções-como-valores" class="anchor" href="#fun%C3%A7%C3%B5es-como-valores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funções como valores</h3>
 
 <div class="highlight highlight-python"><pre>numeros <span class="pl-k">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>, <span class="pl-c1">6</span>, <span class="pl-c1">7</span>, <span class="pl-c1">8</span>]
-pares <span class="pl-k">=</span> numeros.filtre(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n mod <span class="pl-c1">2</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>)
+pares <span class="pl-k">=</span> numeros.selecione(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n mod <span class="pl-c1">2</span> <span class="pl-k">==</span> <span class="pl-c1">0</span>)
 soma <span class="pl-k">=</span> numeros.injete(<span class="pl-c1">0</span>)((a,b) <span class="pl-k">=</span><span class="pl-k">&gt;</span> a <span class="pl-k">+</span> b)
 dobro <span class="pl-k">=</span> numeros.mapeie(<span class="pl-smi">n</span> <span class="pl-k">=</span><span class="pl-k">&gt;</span> n <span class="pl-k">*</span> <span class="pl-c1">2</span>)</pre></div>
 
@@ -341,7 +341,16 @@ dobro <span class="pl-k">=</span> numeros.mapeie(<span class="pl-smi">n</span> <
 
     </section>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-66397531-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
-
