@@ -12,7 +12,7 @@
  * Multiparadigma
  * Estímulo ao paradigma funcional: valores imutáveis, casamento de padrões, funções como valores
 
-##Como usar:
+## Como usar
   - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases
   - Descompacte o arquivo
   - Para executar o Editor de Código digite no prompt do terminal
