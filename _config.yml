@@ -2,7 +2,7 @@ title: Linguagem Potigol
 description: Programação para todos
 google_analytics: UA-66397531-1
 show_downloads: true
-theme: jekyll-theme-cayman
+theme: jekyll-theme-architect
 
 gems:
   - jekyll-mentions
