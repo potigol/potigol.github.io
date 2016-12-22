@@ -32,7 +32,7 @@ Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 ## A Linguagem
 
 ### Variáveis
-````python
+````scala
 x = 10        # Valor fixo
 
 var y = 10    # Valor alterável
@@ -40,7 +40,7 @@ y := y + 2
 ````
 
 ### Operações Aritméticas
-````python
+````scala
 5 + 3
 5 - 3
 5 * 3
@@ -50,7 +50,7 @@ y := y + 2
 ````
 
 ### Entrada
-````python
+````scala
 a = leia_inteiro
 b = leia_numero
 c = leia_texto
@@ -70,7 +70,7 @@ escreva "Olá {nome}"
 ````
 
 ### Se
-````scala
+````dart
 se x > 5 então
     escreva "Maior do que cinco."
 fim
@@ -97,7 +97,7 @@ fim
 ````
 
 ### Escolha
-````python
+````scala
 escolha x
     caso 1 => escreva "Um"
     caso 2 => escreva "Dois"
@@ -107,14 +107,14 @@ fim
 ````
 
 ### Para
-````python
+````scala
 para i de 1 até 10 faça
     escreva i
 fim
 ````
 
 ### Enquanto
-````python
+````scala
 var i = 0
 enquanto i<=10 faça
     escreva i
@@ -123,7 +123,7 @@ fim
 ````
 
 ### Funções
-````python
+````scala
 soma(x, y: Inteiro) = x + y
     
 a, b = leia_inteiro
@@ -145,7 +145,7 @@ escreva "Fatorial de {a} é {fatorial(a)}"
 ## Tipos
 
 ### Número (Inteiro e Real)
-````python
+````scala
 12345.678.inteiro                 # 12345
 12345.678.arredonde               # 12346
 12345.678.arredonde(2)            # 12345.68
@@ -155,7 +155,7 @@ escreva "Fatorial de {a} é {fatorial(a)}"
 ````
 
 ### Texto
-````python
+````scala
 "123".inteiro                     # 123
 "12abc3".inteiro                  # 12
 "abc".inteiro                     # 0
@@ -190,7 +190,7 @@ escreva "Fatorial de {a} é {fatorial(a)}"
 ````
 
 ### Lista
-````python
+````scala
 [2, 4, 6, 8, 10]                         # lista literal
 2 :: [4, 6, 8, 10]                       # [2, 4, 6, 8, 10]
 [2, 4, 6, 8, 10].tamanho                 # 5
@@ -308,14 +308,14 @@ escreva y
 ````
 
 ### Funções de Alta ordem
-````python
+````scala
 f(g: Inteiro => Inteiro, a: Inteiro) =  g(a)
 sucessor(n: Inteiro) = n+1
 escreva f(sucessor, 5)
 ````
 
 ### Currying
-````python
+````scala
 soma(a: Inteiro) = ((b: Inteiro) => a + b)
 escreva soma(2)(3)
 suc = soma(1)
@@ -323,7 +323,7 @@ escreva suc(4)
 ````
 
 ### Recursão em cauda otimizada
-````python
+````scala
 h(a, cont: Inteiro): Inteiro = escolha a
   caso 0 => cont
   caso n => h(a-1, cont+1)
@@ -332,7 +332,7 @@ escreva h(1000,0)
 ````
 
 ### Casamento de Padrões
-````python
+````scala
 # QuickSort
 quicksort(num: Lista[Inteiro]): Lista[Inteiro] = 
     escolha num
