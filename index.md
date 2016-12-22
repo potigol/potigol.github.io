@@ -3,7 +3,7 @@
 
 ---
 
-*[Download](https://github.com/potigol/Potigol/releases)*
+### *[Download](https://github.com/potigol/Potigol/releases)*
 
 ## Características
  * Projetada para ser usada por alunos iniciantes
@@ -75,14 +75,14 @@ se x > 5 então
     escreva "Maior do que cinco."
 fim
 
----
+###
 se x > 5 então
     escreva "Maior do que cinco."
 senão
     escreva "Menor ou igual a cinco."
 fim
 
----
+###
 se x > 8 então
     escreva "Maior do que oito."
 senãose x > 6 então
@@ -112,6 +112,7 @@ para i de 1 até 10 faça
     escreva i
 fim
 ````
+
 ### Enquanto
 ````python
 var i = 0
@@ -181,11 +182,11 @@ escreva "Fatorial de {a} é {fatorial(a)}"
 "abc".cauda                       # "bc"
 "abc".último                      # 'c'
 "abcde".pegue(3)                  # "abc"
-"abcde".descarte(3)                  # "de"
+"abcde".descarte(3)               # "de"
 
-"abcb".selecione(letra => letra<>'c')       # "abb"
+"abcb".selecione(letra => letra<>'c')          # "abb"
 "abcb".descarte_enquanto(letra => letra<>'c')  # "cb"
-"abcb".pegue_enquanto(letra => letra<'c')   # "ab"
+"abcb".pegue_enquanto(letra => letra<'c')      # "ab"
 ````
 
 ### Lista
@@ -241,7 +242,7 @@ a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
 ````
 
 ### Tupla
-````python
+````ruby
 t = (2015, "potigol", 1.0)                     # Tupla do tipo (Inteiro, Texto, Real
 t.primeiro                                     # 2015
 t.segundo                                      # "potigol"
@@ -249,7 +250,7 @@ t.terceiro                                     # 1.0
 ````
 
 ## Funções Matemática
-````python
+````ruby
 PI
 sen(3.14)
 cos(3.14)
@@ -273,18 +274,18 @@ aleatório([2, 4, 6, 8, 10])            # número aleatório pertencente à list
 ## Programação Funcional
 
 ### Valores (constantes)
-````python
+````ruby
 nome = "potigol"
 ````
 
 ### Listas
-````python
+````ruby
 lista1 = [1,2,3,4]
 lista2 = 0::lista1
 ````
 
 ### Operações com listas (filter, fold, map)
-````python
+````ruby
 numeros = [1, 2, 3, 4, 5, 6, 7, 8]
 pares = numeros.selecione(n => n mod 2 == 0)    # filtro
 soma = numeros.injete(0)((a,b) => a + b)        # fold
@@ -292,13 +293,13 @@ dobro = numeros.mapeie(n => n * 2)              # map
 ````
 
 ### Expressões lambda
-````python
-x = ((a: Inteiro) => a * 2)
+````ruby
+x = (a: Inteiro) => a * 2
 escreva x(4)
 ````
 
 ### "list comprehension"
-````python
+````ruby
 y = para i de 1 até 10,
          j de i + 1 até 10 gere
            i+j
