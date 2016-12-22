@@ -60,7 +60,7 @@ números = leia_inteiros(",")    # lê uma lista de números separados por vírg
 ````
 
 ### Saída
-````python
+````ruby
 escreva "Olá Mundo"   # Escreve e passa para a próxima linha
 imprima "Olá "        # Escreve e continua na mesma linha
 escreva "Mundo"
@@ -70,7 +70,7 @@ escreva "Olá {nome}"
 ````
 
 ### Se
-````python
+````scala
 se x > 5 então
     escreva "Maior do que cinco."
 fim
