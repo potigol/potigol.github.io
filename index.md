@@ -270,6 +270,36 @@ aleatório(1, 6)                        # número aleatório entre 1 e 6
 aleatório([2, 4, 6, 8, 10])            # número aleatório pertencente à lista [2, 4, 6, 8, 10]
 ````
 
+## Programação Orientada a Objetos
+
+Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamente um atributo.
+
+### Declaração de um Tipo (Classe)
+````ruby
+tipo «Nome»
+  «[var]» «lista de atributos do construtor» : «tipo»
+  «atributos» = «valor»
+  «métodos»
+fim
+
+«obj» = «Nome»(«lista de valores do construtor»)
+«obj».«atributo»
+«obj».«metodo»
+````
+
+Exemplo
+
+````ruby
+tipo Quadrado
+  lado: Real
+  area() = lado * lado
+  perimetro() = 4 * lado
+fim
+
+q1 = Quadrado(10)
+escreva q1.area
+escreva q1.perimetro
+````
 
 ## Programação Funcional
 
