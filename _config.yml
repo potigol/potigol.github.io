@@ -3,6 +3,9 @@ description: Programação para todos
 google_analytics: UA-66397531-1
 show_downloads: true
 theme: jekyll-theme-dinky
+markdown: kramdown
+highlighter: rouge
 
 gems:
   - jekyll-mentions
+  
