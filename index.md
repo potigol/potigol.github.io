@@ -35,7 +35,7 @@ Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 ````scala
 x = 10        # Valor fixo
 
-var y = 10    # Valor alterável
+var y := 10   # Valor alterável
 y := y + 2
 ````
 
@@ -55,7 +55,7 @@ a = leia_inteiro
 b = leia_numero
 c = leia_texto
 x, y, z = leia_inteiro
-números = leia_inteiros(5)      # lê um lista de 5 inteiros , um por linha
+números = leia_inteiros(5)      # lê um lista de 5 inteiros, um por linha
 números = leia_inteiros(",")    # lê uma lista de números separados por vírgula
 ````
 
@@ -70,7 +70,7 @@ escreva "Olá {nome}"
 ````
 
 ### Se
-````dart
+````python
 se x > 5 então
     escreva "Maior do que cinco."
 fim
@@ -131,11 +131,11 @@ c = soma(a, b)
 escreva "{a} + {b} = {c}"
 
 fatorial(n: Inteiro)
-    var f = 1
+    var f := 1
     para i de 2 até n faça
         f := f * i
     fim
-    f
+    retorne f
 fim
 
 a = leia_inteiro
@@ -243,7 +243,7 @@ a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
 
 ### Tupla
 ````ruby
-t = (2015, "potigol", 1.0)                     # Tupla do tipo (Inteiro, Texto, Real
+t = Tupla(2015, "potigol", 1.0)                # Tupla do tipo (Inteiro, Texto, Real)
 t.primeiro                                     # 2015
 t.segundo                                      # "potigol"
 t.terceiro                                     # 1.0
@@ -275,19 +275,19 @@ aleatório([2, 4, 6, 8, 10])            # número aleatório pertencente à list
 Classes são definidas através de tipos. Os tipos são compostos por atributos e métodos (funções). Todos elementos de um tipo são públicos, mas não é possível alterar diretamente um atributo.
 
 ### Declaração de um Tipo (Classe)
-````ruby
-tipo «Nome»
+````scala
+tipo «Tipo»
   «[var]» «lista de atributos do construtor» : «tipo»
-  «atributos» = «valor»
+  «[var]» «atributos» = «valor»
   «métodos»
 fim
 
-«obj» = «Nome»(«lista de valores do construtor»)
+«obj» = «Tipo»(«lista de valores do construtor»)
 «obj».«atributo»
-«obj».«metodo»
+«obj».«método»
 ````
 
-Exemplo
+#### Exemplo
 
 ````ruby
 tipo Quadrado
@@ -340,7 +340,7 @@ escreva y
 ### Funções de Alta ordem
 ````scala
 f(g: Inteiro => Inteiro, a: Inteiro) =  g(a)
-sucessor(n: Inteiro) = n+1
+sucessor(n: Inteiro) = n + 1
 escreva f(sucessor, 5)
 ````
 
