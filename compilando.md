@@ -37,3 +37,16 @@ Execute o programa em Scala usando:
 Na primeira execução o programa será compilado e um arquivo chamado `soma.jar` será criado.
 A partir da segunda execução não será mais necessário uma nova compilação.
 
+## Criando um script
+
+Criando um script para automatizar o processo de tradução e compilação. Se o arquivo `.scala` não existir ou for mais antigo
+do que o `.poti` então o código Potigol é traduzido par Scala. Depois é executado.
+
+````
+#!/bin/bash
+
+if [ "$1.scala" -ot "$1.poti" ]; then
+    java -jar ./potigol/potigol.jar -d $1.poti > $1.scala
+fi
+./scala-2.11.8/bin/scala -save -cp potigol/potigol.jar $1.scala 2> /dev/null
+````
