@@ -249,7 +249,7 @@ t.segundo                                      # "potigol"
 t.terceiro                                     # 1.0
 ````
 
-## Funções Matemática
+## Funções Matemáticas
 ````ruby
 PI
 sen(3.14)
