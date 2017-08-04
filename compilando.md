@@ -50,3 +50,7 @@ if [ "$1.scala" -ot "$1.poti" ]; then
 fi
 ./scala-2.11.8/bin/scala -save -cp potigol/potigol.jar $1.scala 2> /dev/null
 ````
+
+Para testar digite:
+
+> ./compilar.sh soma
