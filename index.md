@@ -5,6 +5,8 @@
 
 ### *[Download](https://github.com/potigol/Potigol/releases)*
 
+Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Jerimum/) :video_game:
+
 ## Características
  * Projetada para ser usada por alunos iniciantes
  * Tipagem estática com inferência de tipos
