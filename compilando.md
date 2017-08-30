@@ -45,10 +45,13 @@ do que o `.poti` então o código Potigol é traduzido par Scala. Depois é exec
 ````
 #!/bin/bash
 
-if [ "$1.scala" -ot "$1.poti" ]; then
-    java -jar ./potigol/potigol.jar -d $1.poti > $1.scala
+arq=$1
+nome=${arq%.*}
+
+if [ "$1.scala" -ot "$arq" ]; then
+    java -jar ./potigol/potigol.jar -d $arq > $nome.scala
 fi
-./scala-2.11.8/bin/scala -save -cp potigol/potigol.jar $1.scala 2> /dev/null
+./scala-2.11.8/bin/scala -save -cp potigol/potigol.jar $nome.scala 2> /dev/null
 ````
 
 Para testar digite:
