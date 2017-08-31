@@ -245,7 +245,7 @@ a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
 
 ### Tupla
 ````ruby
-t = Tupla(2015, "potigol", 1.0)                # Tupla do tipo (Inteiro, Texto, Real)
+t = (2015, "potigol", 1.0)                # Tupla do tipo (Inteiro, Texto, Real)
 t.primeiro                                     # 2015
 t.segundo                                      # "potigol"
 t.terceiro                                     # 1.0
