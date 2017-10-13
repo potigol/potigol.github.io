@@ -71,3 +71,5 @@ IF "%t1%" GTR "%t2%" (
 Para testar digite:
 
 > compilar.bat soma.poti
+
+Veja também: https://git.io/vdXlu
