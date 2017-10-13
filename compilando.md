@@ -3,18 +3,13 @@
 Uma forma de tornar mais rápida a execução de programas em Potigol é transcrever
 os programas para a lingaugem Scala e em seguida realizar a compilação.
 
-## Preparando o ambiente
+### Download do Potigol
 
-Crie uma pasta de trabalho
+Faça o download da linguagem Potigol (https://github.com/potigol/Potigol/releases/download/0.9.13/potigol.zip) e descompacte.
 
 ### Download de Scala versão 2.11.8
 
-Faça o download da linguagem Scala (http://scala-lang.org/download/2.11.8.html) e descompacte na pasta de trabalho.
-
-### Copiando o Potigol
-
-Copie a pasta do potigol para a pasta de trabalho
-
+Faça o download da linguagem Scala (http://scala-lang.org/download/2.11.8.html) e descompacte dentro da pasta do Potigol.
 
 ## Compilando o programa
 
@@ -61,14 +56,16 @@ Para testar digite:
 
 ### Windows (compilar.bat)
 ````
-@echo off
+@ECHO off
+CHCP 65001 > NUL
 SET scala_file=%~n1.scala
 SET t1=%~t1
 FOR %%A IN (%scala_file%) DO (SET t2=%%~tA)
-if "%t1%" GTR "%t2%" (
-    java -jar potigol\potigol.jar -d %1 > %scala_file%
-)
-scala-2.11.8\bin\scala -save -cp potigol\potigol.jar %scala_file% 2> NUL
+IF "%t1%" GTR "%t2%" (
+    java -jar %~dp0potigol.jar -d %1 > %scala_file%
+    potigol %1
+) ELSE (
+    %~dp0scala-2.11.8\bin\scala -save -cp %~dp0potigol.jar %scala_file% 2> NUL
 ````
 
 Para testar digite:
