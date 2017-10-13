@@ -42,6 +42,7 @@ A partir da segunda execução não será mais necessário uma nova compilação
 Criando um script para automatizar o processo de tradução e compilação. Se o arquivo `.scala` não existir ou for mais antigo
 do que o `.poti` então o código Potigol é traduzido par Scala. Depois é executado.
 
+### Linux (compilar.sh)
 ````
 #!/bin/bash
 
@@ -56,4 +57,20 @@ fi
 
 Para testar digite:
 
-> ./compilar.sh soma
+> ./compilar.sh soma.poti
+
+### Windows (compilar.bat)
+````
+@echo off
+SET scala_file=%~n1.scala
+SET t1=%~t1
+FOR %%A IN (%scala_file%) DO (SET t2=%%~tA)
+if "%t1%" GTR "%t2%" (
+    java -jar potigol\potigol.jar -d %1 > %scala_file%
+)
+scala-2.11.8\bin\scala -save -cp potigol\potigol.jar %scala_file% 2> NUL
+````
+
+Para testar digite:
+
+> compilar.bat soma.poti
