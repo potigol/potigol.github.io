@@ -15,7 +15,7 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
  * Estímulo ao paradigma funcional: valores imutáveis, casamento de padrões, funções como valores
 
 ## Como usar
-  - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases
+  - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases/latest
   - Descompacte o arquivo
   - Para executar o Editor de Código digite no prompt do terminal
   
@@ -54,7 +54,7 @@ y := y + 2
 ### Entrada
 ````scala
 a = leia_inteiro
-b = leia_numero
+b = leia_real
 c = leia_texto
 x, y, z = leia_inteiro
 números = leia_inteiros(5)      # lê um lista de 5 inteiros, um por linha
@@ -117,7 +117,7 @@ fim
 
 ### Enquanto
 ````scala
-var i = 0
+var i := 0
 enquanto i<=10 faça
     escreva i
     i := i + 1
@@ -245,7 +245,7 @@ a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
 
 ### Tupla
 ````ruby
-t = (2015, "potigol", 1.0)                # Tupla do tipo (Inteiro, Texto, Real)
+t = (2015, "potigol", 1.0)                     # Tupla do tipo (Inteiro, Texto, Real)
 t.primeiro                                     # 2015
 t.segundo                                      # "potigol"
 t.terceiro                                     # 1.0
