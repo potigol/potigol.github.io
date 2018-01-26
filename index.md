@@ -20,14 +20,16 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
   - Para executar o Editor de Código digite no prompt do terminal
   
   ````java -jar epotigol.jar````
-
+  
    ![Editor Potigol](https://cloud.githubusercontent.com/assets/303460/8604675/7180d638-2656-11e5-9239-90d29628d9d0.png)
+
+  - No windows basta executar `epotigol.bat`.
 
   - Para executar um programa em Potigol digite no prompt do terminal
 
   ````java -jar potigol.jar arquivo.poti````
 
-  - No Windows basta usar ````epotigol```` ou ````potigol arquivo.poti````.
+  - No Windows basta usar `potigol arquivo.poti`.
   
 Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 
@@ -35,20 +37,24 @@ Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 
 ### Variáveis
 ````scala
-x = 10        # Valor fixo
+x = 10                 # Declaração de um valor fixo (não pode ser alterado)
+y, z = 20              # Mais de uma variável recebe o mesmo valor y = 20 e z = 20
+a, b, c = 1, 2, 3      # Declaração paralela: a = 1, b = 2 e c = 3
 
-var y := 10   # Valor alterável
-y := y + 2
+var y := 10            # Declaração de uma variável alterável
+y := y + 2             # Atribuição de um valor a uma variável
+var a, b, c := 1, 2, 3 # Declaração paralela: var a := 1, var b := 2 e var c := 3
+a, b, c := b, a, 4     # Atribuição paralela: a := 2, b := 1 e c := 4
 ````
 
 ### Operações Aritméticas
 ````scala
-5 + 3
-5 - 3
-5 * 3
-5 / 3
-5 div 3
-5 mod 3
+5 + 3         # 8
+5 - 3         # 2
+5 * 3         # 15
+5 / 3         # 2.33333
+5 div 3       # 1
+5 mod 3       # 2
 ````
 
 ### Entrada
