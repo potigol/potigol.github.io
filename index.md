@@ -49,22 +49,38 @@ a, b, c := b, a, 4     # Atribuição paralela: a := 2, b := 1 e c := 4
 
 ### Operações Aritméticas
 ````scala
-5 + 3         # 8
-5 - 3         # 2
-5 * 3         # 15
-5 / 3         # 2.33333
-5 div 3       # 1
-5 mod 3       # 2
+5 + 3         # Soma: 8
+5 - 3         # Subtração: 2
+5 * 3         # Multiplicação: 15
+5 / 3         # Divisão real: 2.33333
+5 div 3       # Divisão inteira: 1
+5 mod 3       # Resto da divisão: 2
 ````
+
+### Operações Lógicas e Relacionais
+````scala
+# Valores lógicos: verdadeiro, falso
+verdadeiro e falso                    # e lógico              : falso
+verdadeiro ou falso                   # ou lógico             : verdadeiro
+não verdadeiro                        # não lógico            : falso
+
+2 == 3                                # teste de igualdade    : falso
+2 <> 3                                # teste de desigualdade : verdadeiro
+2 < 3                                 # menor                 : verdadeiro
+2 <= 3                                # menor ou igual        : verdadeiro
+2 > 3                                 # maior                 : falso
+2 >= 3                                # maior ou igual        : verdadeiro
+````
+
 
 ### Entrada
 ````scala
-a = leia_inteiro
-b = leia_real
-c = leia_texto
-x, y, z = leia_inteiro
-números = leia_inteiros(5)      # lê um lista de 5 inteiros, um por linha
-números = leia_inteiros(",")    # lê uma lista de números separados por vírgula
+a = leia_inteiro                # lê um número inteiro do teclado
+b = leia_real                   # lê um número real do teclado
+c = leia_texto                  # lê um texto do teclado
+x, y = leia_inteiro             # lê 2 inteiros, o mesmo que x = leia_inteiro, y = leia_inteiro
+números = leia_inteiros(5)      # lê um lista de 5 números inteiros, um por linha
+números = leia_inteiros(",")    # lê uma lista de números inteiros separados por vírgula
 ````
 
 ### Saída
@@ -74,34 +90,38 @@ imprima "Olá "        # Escreve e continua na mesma linha
 escreva "Mundo"
 
 nome = "Mundo"
-escreva "Olá {nome}"
+escreva "Olá {nome}!"  # "Olá Mundo!"
 ````
 
 ### Se
 ````python
-se x > 5 então
-    escreva "Maior do que cinco."
+x = leia_inteiro
+se x > 5 então                       # se ... então ... fim
+  escreva "Maior do que cinco."
 fim
 
-###
-se x > 5 então
-    escreva "Maior do que cinco."
+se x > 5 então                       # se ... então ... senão ... fim
+  escreva "Maior do que cinco."
 senão
-    escreva "Menor ou igual a cinco."
+  escreva "Menor ou igual a cinco."
 fim
 
-###
-se x > 8 então
-    escreva "Maior do que oito."
+se x > 8 então                        # se ... então ... senãose ... senão ... fim
+  escreva "Maior do que oito."
 senãose x > 6 então
-    escreva "Maior do que seis."
+  escreva "Maior do que seis."
 senãose x > 4 então
-    escreva "Maior do que quatro."
+  escreva "Maior do que quatro."
 senãose x > 2 então
-    escreva "Maior do que dois."
+  escreva "Maior do que dois."
 senão
-    escreva "Menor ou igual a dois."
+  escreva "Menor ou igual a dois."
 fim
+
+# usando se como uma expressão
+a = se x mod 2 == 0 então "par" senão "ímpar" fim
+
+maior = se a >= b e a >= c então a senãose b > c então b senão c fim
 ````
 
 ### Escolha
