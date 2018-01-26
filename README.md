@@ -47,6 +47,17 @@ var a, b, c := 1, 2, 3 # Declaração paralela: var a := 1, var b := 2 e var c :
 a, b, c := b, a, 4     # Atribuição paralela: a := 2, b := 1 e c := 4
 ````
 
+## Tipos Básicos
+
+| Tipo | Valores |
+| --- | --- |
+| Inteiro | `-4`, `0`, `5`, ... |
+| Real | `-7.23`, `0.0`, `5.25`, ... |
+| Texto | `"texto"`, `"ola"`, `"mundo"`, ... |
+| Lógico | `verdadeiro` e `falso` |
+| Caractere | `'a'`, `'4'`, `'&'`, ... |
+
+
 ### Operações Aritméticas
 ````scala
 5 + 3         # Soma: 8
