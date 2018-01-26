@@ -210,10 +210,10 @@ pares = para i de 1 até 10 se i mod 2 == 0 gere i  # [2, 4, 5, 6, 8, 10]
 
 ````
 
-### Enquanto
+### Repetição: Enquanto
 ````scala
 var i := 0
-enquanto i<=10 faça
+enquanto i<=10 faça                 # Escreve os números de 1 a 10
     escreva i
     i := i + 1
 fim
@@ -221,22 +221,42 @@ fim
 
 ### Funções
 ````scala
-soma(x, y: Inteiro) = x + y
+soma(x: Inteiro, y: Inteiro) = x + y    # Declaração de função em uma linha
+
+soma(x, y: Inteiro) = x + y             # Agrupando parâmetros do mesmo tipo
+
+rep(a: Texto, n: Inteiro) = a * n       # Funções com parâmetros de tipos diferentes
     
 a, b = leia_inteiro
-c = soma(a, b)
+c = soma(a, b)                          # Aplicando a função
 escreva "{a} + {b} = {c}"
 
-fatorial(n: Inteiro)
-    var f := 1
-    para i de 2 até n faça
-        f := f * i
-    fim
-    retorne f
+soma(x, y: Inteiro): Inteiro = x + y    # O tipo de retorno pode ser definido explicitamente
+
+soma(x, y: Inteiro)                     # Declaração de função com corpo
+  c = x + y
+  retorne c                             # A última linha tem o valor de retorno
 fim
 
+soma(x, y: Inteiro)                     # Declaração de função com corpo
+  c = x + y
+  c                                     # A palavra 'retorne' é opcional 
+fim
+
+fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)
+  se n <= 1 então
+    1
+  senão
+    n * fatorial(n - 1)
+  fim
+fim
 a = leia_inteiro
 escreva "Fatorial de {a} é {fatorial(a)}"
+
+f(a: Inteiro)
+  g(b: Inteiro) = b * 2                 # Função interna
+  retorne g(a) + 3
+fim
 ````
 
 ## Tipos
