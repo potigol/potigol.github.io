@@ -270,6 +270,20 @@ f(a: Inteiro)
 fim
 ````
 
+### Tipo de parâmetros
+
+| Tipo | Exemplo | Aplicação|
+| --- | --- | --- |
+| `Inteiro` | `proximo(a: Inteiro) = a + 1 `| `proximo(3)` |
+| `Real`    | `dobro(a: Real) = a * 2` | `dobro(3.6)` |
+| `Texto`   | `inicio(s: Texto) = s.pegue(5)` | `inicio("Olá mundo!")` |
+| `Lógico`  | `negacao(a: Lógico) = não a` | `negacao(verdadeiro)` |
+| `Caractere` | `id(c: Caractere) = c` | `id('a')` |
+| `Tupla` | `f(a : (Inteiro, Texto)) = ...` | `f((10,"ok"))` |
+| `Lista` | `soma(a: Lista[inteiro]) = ...` | `soma([1,2,3,4,5])` |
+| Função | `f(g: (Inteiro, Inteiro) => Inteiro) = g(2,3)` | `f((a,b) => a + b)` |
+| Classe ou Registro | `f(a: T) = ...` | `f(T(...))` |
+
 ## Tipos
 
 ### Número (Inteiro e Real)
