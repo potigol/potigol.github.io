@@ -47,7 +47,7 @@ var a, b, c := 1, 2, 3 # Declaração paralela: var a := 1, var b := 2 e var c :
 a, b, c := b, a, 4     # Atribuição paralela: a := 2, b := 1 e c := 4
 ````
 
-## Tipos Básicos
+### Tipos Básicos
 
 | Tipo | Valores |
 | --- | --- |
@@ -274,47 +274,72 @@ fim
 
 ### Número (Inteiro e Real)
 ````scala
+12345.qual_tipo                   # "Inteiro"
+12345.real                        # 12345.0
+12345.texto                       # "12345"
+97.caractere                      # 'a'
+12345 formato "%8d"               # "   12345"
+
+12345.678.qual_tipo               # "Real"
 12345.678.inteiro                 # 12345
+12345.678.texto                   # "12345.678"
 12345.678.arredonde               # 12346
 12345.678.arredonde(2)            # 12345.68
-12345.texto                       # "12345"
-12345 formato "%8d"               # "   12345"
 123.45 formato "%.1f"             # "123.4"
+
+12345.678.piso                    # 12345.0 (arredonda para baixo)
+12345.678.teto                    # 12346.0 (arredonda para cima)
+12345.678.inteiro                 # 12345
 ````
 
 ### Texto
 ````scala
+"abc".qual_tipo                   # "Texto"
 "123".inteiro                     # 123
 "12abc3".inteiro                  # 12
 "abc".inteiro                     # 0
+"abc"[2]                          # 'b' (caractere na posição 2)
 
 "12.3".real                       # 12.3
 "12a.3".real                      # 12.0
 "abc".real                        # 0.0
 
+"ab" + "cd"                       # "abcd"  (concatenação)
+"abcb" - "bd"                     # "acb"   (subtração)
+
 "abc".tamanho                     # 3
-"abc".posição('b')                # 2
+"abc".posição('b')                # 2 (posição de 'b' em "abc")
 "abc".posição('d')                # 0
-"abc".contém('a')                 # verdadeiro
+"abc".contém('a')                 # verdadeiro (testa de 'a' está em "abc")
 "abc".contém('d')                 # falso
 
 "Abc".maiúsculo                   # "ABC"
 "Abc".minúsculo                   # "abc"
 "Abc".inverta                     # "cbA"
+"cab".ordene                      # "abc"
+"abc".junte("-")                  # "a-b-c"
+"abc".junte("[", ", ", "]")       # "[a, b, c]"
 
-"Isto é um texto".divida          # ["Isto", "é", "um", "texto"]
-"Isto é um texto".divida("t")     # ["Is", "o é um ", "ex", "o"]
-"Isto é um texto".lista           # ["I", "s", "t", "o", " ", "é", " ", "u", "m", " ", "t", "e", "x", "t", "o"]
+"Um texto".divida                 # ["Um", "texto"]
+"Um texto".divida("t")            # ["Um ", "ex", "o"]
+"Um texto".lista                  # ['U', 'm', ' ', 't', 'e', 'x', 't', 'o']
 
-"abc".cabeça                      # 'a'
-"abc".cauda                       # "bc"
-"abc".último                      # 'c'
-"abcde".pegue(3)                  # "abc"
-"abcde".descarte(3)               # "de"
+"abc".cabeça                      # 'a'  (primeiro caractere de "abc")
+"abc".cauda                       # "bc" ("abc" sem o primeiro caractere)
+"abc".último                      # 'c'  (último caractere de "abc")
+"abcde".pegue(3)                  # "abc" (primeiros 3 caracteres)
+"abcde".descarte(3)               # "de"  (sem os primeiros 3 caracteres)
 
-"abcb".selecione(letra => letra<>'c')          # "abb"
-"abcb".descarte_enquanto(letra => letra<>'c')  # "cb"
-"abcb".pegue_enquanto(letra => letra<'c')      # "ab"
+"abcb".selecione(letra => letra<>'c')          # "abb" ("abcb" sem 'c')
+"abc".injete(0)((x,y) => x + y)                # 294   (97 + 98 + 99)
+"abc".injete("")((x,y) => x + "-" + y)         # "-a-b-c"
+
+"abcb".descarte_enquanto(letra => letra<>'c')  # "cb" (descarte caracteres antes de 'c')
+"abcb".pegue_enquanto(letra => letra<'c')      # "ab" (pegue caracteres antes de 'c')
+
+x = "abc".remova(2)               # x = "ac"  (remove o caractere na posição 2)
+y = "abc".insira(3, 'd')          # y = "abdc" (insere 'd' na posição 2)
+z = "abc".insira(3, "def")        # z = "abdefc" (insere "def" na posição 2) 
 ````
 
 ### Lista
