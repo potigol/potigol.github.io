@@ -1,7 +1,7 @@
 title: Linguagem Potigol
 description: Programação para todos
 google_analytics: UA-66397531-1
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-dinky
 markdown: kramdown
 highlighter: rouge
@@ -9,3 +9,5 @@ highlighter: rouge
 gems:
   - jekyll-mentions
   
+plugins:
+  - jemoji
