@@ -8,6 +8,7 @@ highlighter: rouge
 
 gems:
   - jekyll-mentions
+  - jekyll-paginate
   
 plugins:
   - jemoji
