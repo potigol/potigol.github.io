@@ -12,3 +12,4 @@ gems:
   
 plugins:
   - jemoji
+  - jekyll-gist
