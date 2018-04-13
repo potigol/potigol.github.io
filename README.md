@@ -1,6 +1,8 @@
 > # Potigol é ...
 > Uma linguagem moderna (funcional) para aprender a programar.
 
+   ![Editor Potigol](https://cloud.githubusercontent.com/assets/303460/8604675/7180d638-2656-11e5-9239-90d29628d9d0.png)
+
 ---
 
 ## Faça o *[Download](https://github.com/potigol/Potigol/releases)* e veja como *[Instalar](https://github.com/potigol/Potigol#como-usar)*
@@ -26,8 +28,6 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
   
   ````java -jar epotigol.jar````
   
-   ![Editor Potigol](https://cloud.githubusercontent.com/assets/303460/8604675/7180d638-2656-11e5-9239-90d29628d9d0.png)
-
   - No windows basta executar `epotigol.bat`.
 
   - Para executar um programa em Potigol digite no prompt do terminal
