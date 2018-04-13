@@ -3,7 +3,7 @@
 
 ---
 
-## Faça o *[Download](https://github.com/potigol/Potigol/releases)*
+## Faça o *[Download](https://github.com/potigol/Potigol/releases)* e veja como *[Instalar](https://github.com/potigol/Potigol#como-usar)*
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
 
