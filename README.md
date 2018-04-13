@@ -3,7 +3,12 @@
 
 ---
 
-### *[Download](https://github.com/potigol/Potigol/releases)*
+## Faça o *[Download](https://github.com/potigol/Potigol/releases)*
+
+## Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
+
+### E-mail: *[projetopoti@gmail.com](mailto:projetopoti@gmail.com)*
+
 
 Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Jerimum/) :video_game:
 
