@@ -68,7 +68,7 @@ a, b, c := b, a, 4     # Atribuição paralela: a := 2, b := 1 e c := 4
 5 + 3         # Soma: 8
 5 - 3         # Subtração: 2
 5 * 3         # Multiplicação: 15
-5 / 3         # Divisão real: 2.33333
+5 / 3         # Divisão real: 1.66667
 5 div 3       # Divisão inteira: 1
 5 mod 3       # Resto da divisão: 2
 ````
