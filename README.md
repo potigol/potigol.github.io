@@ -85,7 +85,7 @@ não verdadeiro                        # não lógico            : falso
 2 < 3                                 # menor                 : verdadeiro
 2 <= 3                                # menor ou igual        : verdadeiro
 2 > 3                                 # maior                 : falso
-2 >= 3                                # maior ou igual        : verdadeiro
+2 >= 3                                # maior ou igual        : falso
 ````
 
 
