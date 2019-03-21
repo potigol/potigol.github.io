@@ -8,6 +8,8 @@
 ## Faça o *[Download](https://github.com/potigol/Potigol/releases)* e veja como *[Instalar](https://github.com/potigol/Potigol#como-usar)*
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
+ 
+ - Problemas resolvidos usando a Linguagem Potigol (https://potigol.github.io/URI-Potigol/) :new:
 
  - E-mail: *[projetopoti@gmail.com](mailto:projetopoti@gmail.com)*
 
