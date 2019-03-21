@@ -9,8 +9,8 @@
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
  
- - Problemas resolvidos usando a Linguagem Potigol (https://potigol.github.io/URI-Potigol/) :new:
-
+ - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
+ 
  - E-mail: *[projetopoti@gmail.com](mailto:projetopoti@gmail.com)*
 
 
