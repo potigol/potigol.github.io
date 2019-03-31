@@ -11,7 +11,7 @@
  
  - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
  
- - E-mail: *[projetopoti@gmail.com](mailto:projetopoti@gmail.com)*
+ - *[Experimente!](/tente)* :new:
 
 
 Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Jerimum/) :video_game:
