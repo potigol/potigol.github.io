@@ -11,7 +11,7 @@
  
  - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
  
- - *[Experimente!](/tente)* :new:
+ - *[Experimente!](https://potigol.github.io/tente)* :new:
 
 
 Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Jerimum/) :video_game:
