@@ -415,10 +415,10 @@ a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
 # Funções de alta-ordem
 [2, 4, 6, 8, 10].selecione(n => n mod 4 == 0)  # [4, 8]
 [2, 4, 6, 8, 10].mapeie(n => n div 2)          # [1, 2, 3, 4, 5]
-[2, 4, 6]. injete(0)((a,b) => a + b)           # 0 + 2 + 4 + 6 == 12
-[2, 4, 6]. injete((a,b) => a + b)              # 2 + 4 + 6 == 12
+[2, 4, 6].injete(0)((a, b) => a + b)           # 0 + 2 + 4 + 6 == 12
+[2, 4, 6].injete((a, b: Inteiro) => a + b)     # 2 + 4 + 6 == 12
 [2, 4, 6, 2, 4].pegue_enquanto(n => n < 6)     # [2, 4]
-[2, 4, 6, 2, 4].descarte_enquanto(n => n < 6)     # [6, 2, 4]
+[2, 4, 6, 2, 4].descarte_enquanto(n => n < 6)  # [6, 2, 4]
 ````
 
 ### Tupla
