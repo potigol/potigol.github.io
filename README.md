@@ -168,51 +168,51 @@ maior = se a >= b e a >= c então a senãose b > c então b senão c fim
 ````scala
 x = leia_inteiro
 escolha x
-    caso 1 => escreva "Um"               # se x == 1
-    caso 2 => escreva "Dois"             # se x <> 1 e x == 2
-    caso 3 => escreva "Três"             # se x <> 1 e x <> 2 e x == 3
-    caso _ => escreva "Outro valor"      # se x <> 1 e x <> 2 e x <> 3
+  caso 1 => escreva "Um"               # se x == 1
+  caso 2 => escreva "Dois"             # se x <> 1 e x == 2
+  caso 3 => escreva "Três"             # se x <> 1 e x <> 2 e x == 3
+  caso _ => escreva "Outro valor"      # se x <> 1 e x <> 2 e x <> 3
 fim
 
 # escolha com condições
 escolha x
-    caso n se n < 0        => escreva "{n} é negativo"
-    caso n se n mod 2 == 0 => escreva "{n} é par"
-    caso n                 => escreva "{n} é ímpar"
+  caso n se n < 0        => escreva "{n} é negativo"
+  caso n se n mod 2 == 0 => escreva "{n} é par"
+  caso n                 => escreva "{n} é ímpar"
 fim
 
 # usando escolha como uma expressão
 é_zero = escolha x
-    caso 0 => verdadeiro
-    caso _ => falso
+  caso 0 => verdadeiro
+  caso _ => falso
 fim
 
 sinal = escolha x               # escolha retorna um número: -1, 0 ou 1
-    caso n se n < 0 => -1
-    caso n se n > 0 =>  1
-    caso _          =>  0
+  caso n se n < 0 => -1
+  caso n se n > 0 =>  1
+  caso _          =>  0
 fim
 ````
 
 ### Repetição: Para
 ````scala
 para i de 1 até 10 faça            # escreve os números de 1 a 10
-    escreva i
+  escreva i
 fim
 
 var soma := 0
 para i de 1 até 10 faça            # soma os números de 1 a 10
-    soma := soma + i
+  soma := soma + i
 fim
 escreva "A soma é {soma}."
 
 para i de 1 até 10 passo 2 faça    # escreve os números ímpares de 1 a 10
-    escreva i
+  escreva i
 fim
 
 # Para decrescente
 para i de 10 até 1 passo -1 faça   # escreve os números de 10 a 1
-    escreva i
+  escreva i
 fim
 
 # Para com mais de um gerador
@@ -224,7 +224,7 @@ fim
 # Para com listas
 cores = ["azul", vermelho", "verde"]
 para cor em cores faça
-    escreva cor
+  escreva cor
 fim
 
 # Para gerando uma lista
@@ -238,8 +238,8 @@ pares = para i de 1 até 10 se i mod 2 == 0 gere i  # [2, 4, 5, 6, 8, 10]
 ````scala
 var i := 0
 enquanto i<=10 faça                 # Escreve os números de 1 a 10
-    escreva i
-    i := i + 1
+  escreva i
+  i := i + 1
 fim
 ````
 
@@ -258,28 +258,28 @@ escreva "{a} + {b} = {c}"
 soma(x, y: Inteiro): Inteiro = x + y    # O tipo de retorno pode ser definido explicitamente
 
 soma(x, y: Inteiro)                     # Declaração de função com corpo
-    c = x + y
-    retorne c                             # A última linha tem o valor de retorno
+  c = x + y
+  retorne c                             # A última linha tem o valor de retorno
 fim
 
 soma(x, y: Inteiro)                     # Declaração de função com corpo
-    c = x + y
-    c                                     # A palavra 'retorne' é opcional
+  c = x + y
+  c                                     # A palavra 'retorne' é opcional
 fim
 
 fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)
-    se n <= 1 então
-        1
-    senão
-        n * fatorial(n - 1)
-    fim
+  se n <= 1 então
+    1
+  senão
+    n * fatorial(n - 1)
+  fim
 fim
 a = leia_inteiro
 escreva "Fatorial de {a} é {fatorial(a)}"
 
 f(a: Inteiro)
-    g(b: Inteiro) = b * 2                 # Função interna
-    retorne g(a) + 3
+  g(b: Inteiro) = b * 2                 # Função interna
+  retorne g(a) + 3
 fim
 ````
 
@@ -471,9 +471,9 @@ fim
 
 ````ruby
 tipo Quadrado
-    lado: Real
-    area() = lado * lado
-    perimetro() = 4 * lado
+  lado: Real
+  area() = lado * lado
+  perimetro() = 4 * lado
 fim
 
 q1 = Quadrado(10)
@@ -535,8 +535,8 @@ escreva suc(4)
 ### Recursão em cauda otimizada
 ````scala
 h(a, cont: Inteiro): Inteiro = escolha a
-    caso 0 => cont
-    caso n => h(a-1, cont+1)
+  caso 0 => cont
+  caso n => h(a-1, cont+1)
 fim
 escreva h(1000,0)
 ````
@@ -545,13 +545,13 @@ escreva h(1000,0)
 ````scala
 # QuickSort
 quicksort(num: Lista[Inteiro]): Lista[Inteiro] =
-    escolha num
-        caso []  => []
-        caso pivo::resto =>
-            menores = resto.selecione( _ <= pivo )
-            maiores = resto.selecione( _ >  pivo )
-            quicksort(menores) + pivo::quicksort(maiores)
-    fim
+  escolha num
+    caso []  => []
+    caso pivo::resto =>
+      menores = resto.selecione( _ <= pivo )
+      maiores = resto.selecione( _ >  pivo )
+      quicksort(menores) + pivo::quicksort(maiores)
+  fim
 
 escreva "Digite alguns números separados por espaços"
 numeros = leia_inteiros(" ")
