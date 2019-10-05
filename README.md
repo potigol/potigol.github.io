@@ -14,9 +14,9 @@ Experimente online: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.s
 ## Faça o *[Download](https://github.com/potigol/Potigol/releases)* e veja como *[Instalar](https://github.com/potigol/Potigol#como-usar)*
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
- 
+
  - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
- 
+
  - *[Experimente!](https://potigol.github.io/tente)* :new:
 
 
@@ -25,7 +25,7 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
 ## Características
  * Projetada para ser usada por alunos iniciantes
  * Tipagem estática com inferência de tipos
- * Palavras-chave em português 
+ * Palavras-chave em português
  * Multiparadigma
  * Estímulo ao paradigma funcional: valores imutáveis, casamento de padrões, funções como valores
 
@@ -33,17 +33,17 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
   - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases/latest
   - Descompacte o arquivo
   - Para executar o Editor de Código digite no prompt do terminal
-  
+
   ````java -jar epotigol.jar````
-  
-  - No windows basta executar `epotigol.bat`.
+
+  - No Windows basta executar `epotigol.bat`.
 
   - Para executar um programa em Potigol digite no prompt do terminal
 
   ````java -jar potigol.jar arquivo.poti````
 
   - No Windows basta usar `potigol arquivo.poti`.
-  
+
 Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 
 ## A Linguagem
@@ -176,43 +176,43 @@ fim
 
 # escolha com condições
 escolha x
-  caso n se n < 0        => escreva "{n} é negativo"
-  caso n se n mod 2 == 0 => escreva "{n} é par"
-  caso n                 => escreva "{n} é ímpar"
+    caso n se n < 0        => escreva "{n} é negativo"
+    caso n se n mod 2 == 0 => escreva "{n} é par"
+    caso n                 => escreva "{n} é ímpar"
 fim
 
 # usando escolha como uma expressão
 é_zero = escolha x
-  caso 0 => verdadeiro
-  caso _ => falso
+    caso 0 => verdadeiro
+    caso _ => falso
 fim
 
 sinal = escolha x               # escolha retorna um número: -1, 0 ou 1
-  caso n se n < 0 => -1
-  caso n se n > 0 =>  1
-  caso _          =>  0
+    caso n se n < 0 => -1
+    caso n se n > 0 =>  1
+    caso _          =>  0
 fim
 ````
 
 ### Repetição: Para
-````scala 
+````scala
 para i de 1 até 10 faça            # escreve os números de 1 a 10
-  escreva i
+    escreva i
 fim
 
 var soma := 0
 para i de 1 até 10 faça            # soma os números de 1 a 10
-  soma := soma + i
+    soma := soma + i
 fim
 escreva "A soma é {soma}."
 
 para i de 1 até 10 passo 2 faça    # escreve os números ímpares de 1 a 10
-  escreva i
+    escreva i
 fim
 
 # Para decrescente
 para i de 10 até 1 passo -1 faça   # escreve os números de 10 a 1
-  escreva i
+    escreva i
 fim
 
 # Para com mais de um gerador
@@ -224,7 +224,7 @@ fim
 # Para com listas
 cores = ["azul", vermelho", "verde"]
 para cor em cores faça
-  escreva cor
+    escreva cor
 fim
 
 # Para gerando uma lista
@@ -250,7 +250,7 @@ soma(x: Inteiro, y: Inteiro) = x + y    # Declaração de função em uma linha
 soma(x, y: Inteiro) = x + y             # Agrupando parâmetros do mesmo tipo
 
 rep(a: Texto, n: Inteiro) = a * n       # Funções com parâmetros de tipos diferentes
-    
+
 a, b = leia_inteiro
 c = soma(a, b)                          # Aplicando a função
 escreva "{a} + {b} = {c}"
@@ -258,28 +258,28 @@ escreva "{a} + {b} = {c}"
 soma(x, y: Inteiro): Inteiro = x + y    # O tipo de retorno pode ser definido explicitamente
 
 soma(x, y: Inteiro)                     # Declaração de função com corpo
-  c = x + y
-  retorne c                             # A última linha tem o valor de retorno
+    c = x + y
+    retorne c                             # A última linha tem o valor de retorno
 fim
 
 soma(x, y: Inteiro)                     # Declaração de função com corpo
-  c = x + y
-  c                                     # A palavra 'retorne' é opcional 
+    c = x + y
+    c                                     # A palavra 'retorne' é opcional
 fim
 
 fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)
-  se n <= 1 então
-    1
-  senão
-    n * fatorial(n - 1)
-  fim
+    se n <= 1 então
+        1
+    senão
+        n * fatorial(n - 1)
+    fim
 fim
 a = leia_inteiro
 escreva "Fatorial de {a} é {fatorial(a)}"
 
 f(a: Inteiro)
-  g(b: Inteiro) = b * 2                 # Função interna
-  retorne g(a) + 3
+    g(b: Inteiro) = b * 2                 # Função interna
+    retorne g(a) + 3
 fim
 ````
 
@@ -366,7 +366,7 @@ fim
 
 x = "abc".remova(2)               # x = "ac"  (remove o caractere na posição 2)
 y = "abc".insira(3, 'd')          # y = "abdc" (insere 'd' na posição 2)
-z = "abc".insira(3, "def")        # z = "abdefc" (insere "def" na posição 2) 
+z = "abc".insira(3, "def")        # z = "abdefc" (insere "def" na posição 2)
 ````
 
 ### Lista
@@ -405,13 +405,13 @@ a = [[1, 2], [3, 4]]                     # Matriz 2x2
 a[2]                                     # [3, 4]
 a[2][1]                                  # 3
 b = Matriz.imutável(2, 2, 0)             # b == [[0, 0], [0, 0]]
-c = Cubo.imutável(2, 2, 2, "-")          # c == [[["-", "-"],["-", "-"]],[["-", "-"],["-", "-"]]] 
+c = Cubo.imutável(2, 2, 2, "-")          # c == [[["-", "-"],["-", "-"]],[["-", "-"],["-", "-"]]]
 c[1][2][1]                               # "-"
 
 # Listas mutáveis
 a = Lista.mutável(5, 0)                      # [0, 0, 0, 0, 0].mutável
 a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
-        
+
 # Funções de alta-ordem
 [2, 4, 6, 8, 10].selecione(n => n mod 4 == 0)  # [4, 8]
 [2, 4, 6, 8, 10].mapeie(n => n div 2)          # [1, 2, 3, 4, 5]
@@ -471,9 +471,9 @@ fim
 
 ````ruby
 tipo Quadrado
-  lado: Real
-  area() = lado * lado
-  perimetro() = 4 * lado
+    lado: Real
+    area() = lado * lado
+    perimetro() = 4 * lado
 fim
 
 q1 = Quadrado(10)
@@ -519,7 +519,7 @@ escreva y
 
 ### Funções de Alta ordem
 ````scala
-f(g: Inteiro => Inteiro, a: Inteiro) =  g(a)
+f(g: Inteiro => Inteiro, a: Inteiro) = g(a)
 sucessor(n: Inteiro) = n + 1
 escreva f(sucessor, 5)
 ````
@@ -535,8 +535,8 @@ escreva suc(4)
 ### Recursão em cauda otimizada
 ````scala
 h(a, cont: Inteiro): Inteiro = escolha a
-  caso 0 => cont
-  caso n => h(a-1, cont+1)
+    caso 0 => cont
+    caso n => h(a-1, cont+1)
 fim
 escreva h(1000,0)
 ````
@@ -544,10 +544,10 @@ escreva h(1000,0)
 ### Casamento de Padrões
 ````scala
 # QuickSort
-quicksort(num: Lista[Inteiro]): Lista[Inteiro] = 
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] =
     escolha num
         caso []  => []
-        caso pivo::resto => 
+        caso pivo::resto =>
             menores = resto.selecione( _ <= pivo )
             maiores = resto.selecione( _ >  pivo )
             quicksort(menores) + pivo::quicksort(maiores)
