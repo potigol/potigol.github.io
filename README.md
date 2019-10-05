@@ -14,9 +14,9 @@ Experimente online: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.s
 ## Faça o *[Download](https://github.com/potigol/Potigol/releases)* e veja como *[Instalar](https://github.com/potigol/Potigol#como-usar)*
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
- 
+
  - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
- 
+
  - *[Experimente!](https://potigol.github.io/tente)* :new:
 
 
@@ -25,7 +25,7 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
 ## Características
  * Projetada para ser usada por alunos iniciantes
  * Tipagem estática com inferência de tipos
- * Palavras-chave em português 
+ * Palavras-chave em português
  * Multiparadigma
  * Estímulo ao paradigma funcional: valores imutáveis, casamento de padrões, funções como valores
 
@@ -33,17 +33,17 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
   - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases/latest
   - Descompacte o arquivo
   - Para executar o Editor de Código digite no prompt do terminal
-  
+
   ````java -jar epotigol.jar````
-  
-  - No windows basta executar `epotigol.bat`.
+
+  - No Windows basta executar `epotigol.bat`.
 
   - Para executar um programa em Potigol digite no prompt do terminal
 
   ````java -jar potigol.jar arquivo.poti````
 
   - No Windows basta usar `potigol arquivo.poti`.
-  
+
 Exemplos: https://github.com/potigol/Potigol/wiki/jogos
 
 ## A Linguagem
@@ -168,10 +168,10 @@ maior = se a >= b e a >= c então a senãose b > c então b senão c fim
 ````scala
 x = leia_inteiro
 escolha x
-    caso 1 => escreva "Um"               # se x == 1
-    caso 2 => escreva "Dois"             # se x <> 1 e x == 2
-    caso 3 => escreva "Três"             # se x <> 1 e x <> 2 e x == 3
-    caso _ => escreva "Outro valor"      # se x <> 1 e x <> 2 e x <> 3
+  caso 1 => escreva "Um"               # se x == 1
+  caso 2 => escreva "Dois"             # se x <> 1 e x == 2
+  caso 3 => escreva "Três"             # se x <> 1 e x <> 2 e x == 3
+  caso _ => escreva "Outro valor"      # se x <> 1 e x <> 2 e x <> 3
 fim
 
 # escolha com condições
@@ -195,7 +195,7 @@ fim
 ````
 
 ### Repetição: Para
-````scala 
+````scala
 para i de 1 até 10 faça            # escreve os números de 1 a 10
   escreva i
 fim
@@ -238,8 +238,8 @@ pares = para i de 1 até 10 se i mod 2 == 0 gere i  # [2, 4, 5, 6, 8, 10]
 ````scala
 var i := 0
 enquanto i<=10 faça                 # Escreve os números de 1 a 10
-    escreva i
-    i := i + 1
+  escreva i
+  i := i + 1
 fim
 ````
 
@@ -250,7 +250,7 @@ soma(x: Inteiro, y: Inteiro) = x + y    # Declaração de função em uma linha
 soma(x, y: Inteiro) = x + y             # Agrupando parâmetros do mesmo tipo
 
 rep(a: Texto, n: Inteiro) = a * n       # Funções com parâmetros de tipos diferentes
-    
+
 a, b = leia_inteiro
 c = soma(a, b)                          # Aplicando a função
 escreva "{a} + {b} = {c}"
@@ -264,7 +264,7 @@ fim
 
 soma(x, y: Inteiro)                     # Declaração de função com corpo
   c = x + y
-  c                                     # A palavra 'retorne' é opcional 
+  c                                     # A palavra 'retorne' é opcional
 fim
 
 fatorial(n: Inteiro): Inteiro           # Função recursiva (tipo de retorno é obrigatório)
@@ -366,7 +366,7 @@ fim
 
 x = "abc".remova(2)               # x = "ac"  (remove o caractere na posição 2)
 y = "abc".insira(3, 'd')          # y = "abdc" (insere 'd' na posição 2)
-z = "abc".insira(3, "def")        # z = "abdefc" (insere "def" na posição 2) 
+z = "abc".insira(3, "def")        # z = "abdefc" (insere "def" na posição 2)
 ````
 
 ### Lista
@@ -405,13 +405,13 @@ a = [[1, 2], [3, 4]]                     # Matriz 2x2
 a[2]                                     # [3, 4]
 a[2][1]                                  # 3
 b = Matriz.imutável(2, 2, 0)             # b == [[0, 0], [0, 0]]
-c = Cubo.imutável(2, 2, 2, "-")          # c == [[["-", "-"],["-", "-"]],[["-", "-"],["-", "-"]]] 
+c = Cubo.imutável(2, 2, 2, "-")          # c == [[["-", "-"],["-", "-"]],[["-", "-"],["-", "-"]]]
 c[1][2][1]                               # "-"
 
 # Listas mutáveis
 a = Lista.mutável(5, 0)                      # [0, 0, 0, 0, 0].mutável
 a[3] := 5                                    # a == [0, 0, 5, 0, 0].mutável
-        
+
 # Funções de alta-ordem
 [2, 4, 6, 8, 10].selecione(n => n mod 4 == 0)  # [4, 8]
 [2, 4, 6, 8, 10].mapeie(n => n div 2)          # [1, 2, 3, 4, 5]
@@ -519,7 +519,7 @@ escreva y
 
 ### Funções de Alta ordem
 ````scala
-f(g: Inteiro => Inteiro, a: Inteiro) =  g(a)
+f(g: Inteiro => Inteiro, a: Inteiro) = g(a)
 sucessor(n: Inteiro) = n + 1
 escreva f(sucessor, 5)
 ````
@@ -544,14 +544,14 @@ escreva h(1000,0)
 ### Casamento de Padrões
 ````scala
 # QuickSort
-quicksort(num: Lista[Inteiro]): Lista[Inteiro] = 
-    escolha num
-        caso []  => []
-        caso pivo::resto => 
-            menores = resto.selecione( _ <= pivo )
-            maiores = resto.selecione( _ >  pivo )
-            quicksort(menores) + pivo::quicksort(maiores)
-    fim
+quicksort(num: Lista[Inteiro]): Lista[Inteiro] =
+  escolha num
+    caso []  => []
+    caso pivo::resto =>
+      menores = resto.selecione( _ <= pivo )
+      maiores = resto.selecione( _ >  pivo )
+      quicksort(menores) + pivo::quicksort(maiores)
+  fim
 
 escreva "Digite alguns números separados por espaços"
 numeros = leia_inteiros(" ")
