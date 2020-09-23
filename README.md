@@ -30,6 +30,7 @@ Conheça também a biblioteca de jogos 2D [Jerimum](https://potigol.github.io/Je
  * Estímulo ao paradigma funcional: valores imutáveis, casamento de padrões, funções como valores
 
 ## Como usar
+  - Verifique se Java está instalado digitando `java -version`. Se der uma mensagem de erro é preciso fazer o download em https://www.java.com/pt_BR/download e instalar.
   - Baixe a versão mais recente do Potigol https://github.com/potigol/Potigol/releases/latest
   - Descompacte o arquivo
   - Para executar o Editor de Código digite no prompt do terminal
