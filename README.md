@@ -15,7 +15,7 @@ Experimente online: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.s
 
  - Siga-nos no twitter: *[@potigol](https://twitter.com/potigol)*
 
- - [Exemplos de programas](https://potigol.github.io/URI-Potigol/) na Linguagem Potigol :new:
+ - [Mais de 500 problemas de programação resolvidos na linguagem Potigol](https://potigol.github.io/UOJ-Potigol/) 
 
  - *[Experimente!](https://potigol.github.io/tente)* :new:
 
